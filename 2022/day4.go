@@ -69,7 +69,7 @@ func part2() int {
 }
 
 func main() {
-	fmt.Println("Part 1 answer: ", part1())
-	fmt.Println("Part 2 answer: ", part2())
+	fmt.Println("Part 1 answer:", part1())
+	fmt.Println("Part 2 answer:", part2())
 	fmt.Println("DONE")
 }

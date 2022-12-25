@@ -43,16 +43,16 @@ func part2() int {
 	}
 	cycle := 1
 	idx := 0
-	for i := 0; i < len(s) - 1; i++ {
+	for i := 0; i < len(s)-1; i++ {
 		if s[i] != "noop" {
-			if strength - 1  <= idx%40 && idx%40 <= strength + 1 {
+			if strength-1 <= idx%40 && idx%40 <= strength+1 {
 				screen[idx/40][idx%40] = "#"
 			} else {
 				screen[idx/40][idx%40] = "."
 			}
 			cycle++
 			idx++
-			if strength - 1  <= idx%40 && idx%40 <= strength + 1 {
+			if strength-1 <= idx%40 && idx%40 <= strength+1 {
 				screen[idx/40][idx%40] = "#"
 			} else {
 				screen[idx/40][idx%40] = "."
@@ -62,7 +62,7 @@ func part2() int {
 			toAdd := convInt(strings.Split(s[i], " ")[1])
 			strength = strength + toAdd
 		} else {
-			if strength - 1  <= idx%40 && idx%40 <= strength + 1 {
+			if strength-1 <= idx%40 && idx%40 <= strength+1 {
 				screen[idx/40][idx%40] = "#"
 			} else {
 				screen[idx/40][idx%40] = "."

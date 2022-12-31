@@ -6,7 +6,7 @@ import (
 )
 
 func part2() int {
-  dat, _ := os.ReadFile("./day14-input")
+	dat, _ := os.ReadFile("./day14-input")
 	s := strings.Split(string(dat)[:len(string(dat))-1], "\n")
 	vertices := make([][][2]int, 0)
 	m1, m2, h := 0, 0, 0
@@ -27,7 +27,7 @@ func part2() int {
 		vertices = append(vertices, tmp)
 	}
 
-  m2 += 500
+	m2 += 500
 	plan := make([][]string, h+3)
 	for i := 0; i < len(plan); i++ {
 		plan[i] = make([]string, m2-m1+1)
@@ -56,9 +56,9 @@ func part2() int {
 			}
 		}
 	}
-  for i := 0; i < len(plan[0]); i++ {
-    plan[len(plan)-1][i] = "#"
-  }
+	for i := 0; i < len(plan[0]); i++ {
+		plan[len(plan)-1][i] = "#"
+	}
 
 	out := false
 	var unit int

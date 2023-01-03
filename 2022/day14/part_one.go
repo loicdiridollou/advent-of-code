@@ -7,6 +7,7 @@ import (
 	"strings"
 )
 
+// docstring
 func convInt(s string) int {
 	num, _ := strconv.Atoi(s)
 	return num

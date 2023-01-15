@@ -16,8 +16,8 @@ func part2() int {
 	round := 0
 	queue := []Exp{exp}
 	arrived := false
-  blizs_config := configBlizs(blizs, 1000, limitb, limitr)
-  queue_map := map[string]bool{}
+	blizs_config := configBlizs(blizs, 1000, limitb, limitr)
+	queue_map := map[string]bool{}
 
 	for round = 0; round < 1000; round++ {
 		blizs = blizs_config[round+1]
@@ -30,14 +30,14 @@ func part2() int {
 			}
 			pot_moves := moveExp(exp)
 			pot_moves = validateMoves(pot_moves, blizs_map, start, end, limitb, limitr)
-      for _, mv := range pot_moves {
-        if queue_map[hashMove(mv, round)] {
-          continue
-        } else {
-          queue_map[hashMove(mv, round)] = true
-          tmp_queue = append(tmp_queue, mv)
-        }
-      }
+			for _, mv := range pot_moves {
+				if queue_map[hashMove(mv, round)] {
+					continue
+				} else {
+					queue_map[hashMove(mv, round)] = true
+					tmp_queue = append(tmp_queue, mv)
+				}
+			}
 		}
 		if arrived {
 			break
@@ -45,10 +45,10 @@ func part2() int {
 		queue = tmp_queue
 	}
 
-  queue = []Exp{{end[0], end[1]}}
+	queue = []Exp{{end[0], end[1]}}
 	arrived = false
-  queue_map = map[string]bool{}
-  round2 := round
+	queue_map = map[string]bool{}
+	round2 := round
 	for round = round2; round < 1000; round++ {
 		blizs = blizs_config[round+1]
 		blizs_map := hashBlizs(blizs)
@@ -60,14 +60,14 @@ func part2() int {
 			}
 			pot_moves := moveExp(exp)
 			pot_moves = validateMoves(pot_moves, blizs_map, start, end, limitb, limitr)
-      for _, mv := range pot_moves {
-        if queue_map[hashMove(mv, round)] {
-          continue
-        } else {
-          queue_map[hashMove(mv, round)] = true
-          tmp_queue = append(tmp_queue, mv)
-        }
-      }
+			for _, mv := range pot_moves {
+				if queue_map[hashMove(mv, round)] {
+					continue
+				} else {
+					queue_map[hashMove(mv, round)] = true
+					tmp_queue = append(tmp_queue, mv)
+				}
+			}
 		}
 		if arrived {
 			break
@@ -75,11 +75,10 @@ func part2() int {
 		queue = tmp_queue
 	}
 
-
 	queue = []Exp{{start[0], start[1]}}
 	arrived = false
-  queue_map = map[string]bool{}
-  round2 = round
+	queue_map = map[string]bool{}
+	round2 = round
 
 	for round = round2; round < 1000; round++ {
 		blizs = blizs_config[round+1]
@@ -92,14 +91,14 @@ func part2() int {
 			}
 			pot_moves := moveExp(exp)
 			pot_moves = validateMoves(pot_moves, blizs_map, start, end, limitb, limitr)
-      for _, mv := range pot_moves {
-        if queue_map[hashMove(mv, round)] {
-          continue
-        } else {
-          queue_map[hashMove(mv, round)] = true
-          tmp_queue = append(tmp_queue, mv)
-        }
-      }
+			for _, mv := range pot_moves {
+				if queue_map[hashMove(mv, round)] {
+					continue
+				} else {
+					queue_map[hashMove(mv, round)] = true
+					tmp_queue = append(tmp_queue, mv)
+				}
+			}
 		}
 		if arrived {
 			break

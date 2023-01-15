@@ -63,10 +63,11 @@ func (bliz *Bliz) Move(limitb, limitr int) Bliz {
 }
 
 func moveBliz(blizs []Bliz, limitb int, limitr int) []Bliz {
-	for i, blz := range blizs {
-		blizs[i] = blz.Move(limitb, limitr)
+	res := []Bliz{}
+	for _, blz := range blizs {
+		res = append(res, blz.Move(limitb, limitr))
 	}
-	return blizs
+	return res
 }
 
 func hashPositionExp(bliz Exp) string {
@@ -158,8 +159,22 @@ func validateMoves(pot_moves []Exp, blizs_map map[string]bool, start [2]int, end
 	return res
 }
 
+func configBlizs(blizs []Bliz, round int, limitb, limitr int) map[int][]Bliz {
+	res := map[int][]Bliz{0: blizs}
+
+	for t := 1; t < round; t++ {
+		res[t] = moveBliz(res[t-1], limitb, limitr)
+	}
+
+	return res
+}
+
+func hashMove(exp Exp, round int) string {
+	return fmt.Sprint(exp.r) + "_" + fmt.Sprint(exp.c) + "_" + fmt.Sprint(round)
+}
+
 func part1() int {
-	dat, _ := os.ReadFile("./day24-test-input")
+	dat, _ := os.ReadFile("./day24-input")
 	input := strings.Split(string(dat), "\n")
 	input = input[:len(input)-1]
 
@@ -169,9 +184,11 @@ func part1() int {
 	round := 0
 	queue := []Exp{exp}
 	arrived := false
+	blizs_config := configBlizs(blizs, 300, limitb, limitr)
+	queue_map := map[string]bool{}
 
-	for round = 0; round < 30; round++ {
-		blizs = moveBliz(blizs, limitb, limitr)
+	for round = 0; round < 300; round++ {
+		blizs = blizs_config[round+1]
 		blizs_map := hashBlizs(blizs)
 		tmp_queue := []Exp{}
 		for _, exp := range queue {
@@ -181,7 +198,14 @@ func part1() int {
 			}
 			pot_moves := moveExp(exp)
 			pot_moves = validateMoves(pot_moves, blizs_map, start, end, limitb, limitr)
-			tmp_queue = append(tmp_queue, pot_moves...)
+			for _, mv := range pot_moves {
+				if queue_map[hashMove(mv, round)] {
+					continue
+				} else {
+					queue_map[hashMove(mv, round)] = true
+					tmp_queue = append(tmp_queue, mv)
+				}
+			}
 		}
 		if arrived {
 			break

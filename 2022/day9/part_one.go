@@ -53,21 +53,61 @@ func (coord *Coord) Move(dir string) {
   }
 }
 
+func Abs(num int) int {
+  if num < 0 {
+    return -num
+  }
+  return num
+}
+
 func (coord *Coord) Adjust(head Coord) {
-  fmt.Println(coord, head)
+  dr, dc := coord.r - head.r, coord.c - head.c
+  if Abs(dr) <= 1 && Abs(dc) <= 1 {
+    return
+  } else if Abs(dr) == 2 && dc == 0 {
+    if dr > 0 {
+      coord.r--
+    } else {
+      coord.r++
+    }
+  } else if Abs(dc) == 2 && dr == 0 {
+   if dc < 0 {
+      coord.c++
+    } else {
+      coord.c--
+    }
+  } else {
+    if dr > 0 && dc > 0 {
+      coord.r--
+      coord.c--
+    } else if dr > 0 && dc < 0 {
+      coord.r--
+      coord.c++
+    } else if dr < 0 && dc > 0 {
+      coord.r++
+      coord.c--
+    } else if dr < 0 && dc < 0 {
+      coord.r++
+      coord.c++
+    }
+  }
 }
 
 func part1() int {
-	dat, _ := os.ReadFile("./day9-test-input")
+	dat, _ := os.ReadFile("./day9-input")
 	input := strings.Split(string(dat), "\n")
 	moves := parseInput(input)
   head := Coord{0, 0}
   tail := Coord{0, 0}
-  tail_positions := map[string]bool{}
-	fmt.Println(moves, head, tail)
-  fmt.Println(tail.Hash())
+  tail_positions := map[string]bool{tail.Hash(): true}
 
-
+  for _, move := range moves {
+    for ln := 0; ln < move.length; ln++ {
+      head.Move(move.dir)
+      tail.Adjust(head)
+      tail_positions[tail.Hash()] = true
+    }
+  }
 
 	return len(tail_positions)
 }

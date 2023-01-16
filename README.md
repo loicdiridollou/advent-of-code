@@ -18,7 +18,7 @@ speeding up abilities of Go compared to other languages I write code in.
 |  Day   |          Title           |                                    Directory                                    | Stars  |
 | :----: | :----------------------: | :-----------------------------------------------------------------------------: | :----: |
 | Day 1  |     Calorie Counting     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day1/)  | ⭐️⭐️ |
-| Day 1  |   Rock Paper Scissors    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day2/)  | ⭐️⭐️ |
+| Day 2  |   Rock Paper Scissors    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day2/)  | ⭐️⭐️ |
 | Day 3  |  Rucksack Organization   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day3/)  | ⭐️⭐️ |
 | Day 4  |       Camp Cleanup       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day4/)  | ⭐️⭐️ |
 | Day 5  |       Supply Stack       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day5/)  | ⭐️⭐️ |

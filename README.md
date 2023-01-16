@@ -25,7 +25,7 @@ speeding up abilities of Go compared to other languages I write code in.
 | Day 6  |      Tuning Trouble      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day6/)  | ⭐️⭐️ |
 | Day 7  | No Space Left On Device  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day7/)  | ⭐️⭐️ |
 | Day 8  |    Treetop Tree House    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day8/)  | ⭐️⭐️ |
-| Day 9  |       Rope Bridge        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day9/)  |        |
+| Day 9  |       Rope Bridge        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day9/)  | ⭐️⭐️ |
 | Day 10 |     Cathode-Ray Tube     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day10/) | ⭐️⭐️ |
 | Day 11 |   Monkey in the Middle   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day11/) | ⭐️⭐️ |
 | Day 12 | Hill Climbing Algorithm  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day12/) | ⭐️⭐️ |
@@ -41,4 +41,4 @@ speeding up abilities of Go compared to other languages I write code in.
 | Day 22 |        Monkey Map        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day22/) | ⭐️⭐️ |
 | Day 23 |    Unstable Diffusion    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day23/) | ⭐️⭐️ |
 | Day 24 |      Blizzard Basin      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day24/) | ⭐️⭐️ |
-| Day 25 |     Full of Hot Air      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day25/) |  ⭐️   |
+| Day 25 |     Full of Hot Air      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day25/) | ⭐️⭐️ |

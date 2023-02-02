@@ -9,18 +9,16 @@ import (
 	"strings"
 )
 
-
 type Blueprint struct {
-	num       int
-	ore_cost []int
-	clay_cost []int
+	num           int
+	ore_cost      []int
+	clay_cost     []int
 	obsidian_cost []int
-	geode_cost     []int
+	geode_cost    []int
 }
 
-
 type State struct {
-  ore, clay, obsidian, geode, r1, r2, r3, r4, t int 
+	ore, clay, obsidian, geode, r1, r2, r3, r4, t int
 }
 
 func convInt(s string) int {
@@ -29,54 +27,61 @@ func convInt(s string) int {
 }
 
 func Min(nums ...int) int {
-  min := nums[0]
-  for _, num := range nums {
-    if num < min {
-      min = num
-    }
-  }
-  return min
+	min := nums[0]
+	for _, num := range nums {
+		if num < min {
+			min = num
+		}
+	}
+	return min
 }
 
 func Max(nums ...int) int {
-  max := nums[0]
-  for _, num := range nums {
-    if num > max {
-      max = num
-    }
-  }
-  return max
+	max := nums[0]
+	for _, num := range nums {
+		if num > max {
+			max = num
+		}
+	}
+	return max
 }
 
 func convStr(lst []int) []string {
-  var res []string
-  for _, el := range lst {
-    res = append(res, strconv.Itoa(el))
-  }
-  return res
+	var res []string
+	for _, el := range lst {
+		res = append(res, strconv.Itoa(el))
+	}
+	return res
 }
 
 func hashVal(state State) string {
-  r1 := state.r1
-  r2 := state.r2
-  r3 := state.r3
-  r4 := state.r4
-  t := state.t
-  o := state.ore
-  c := state.clay
-  ob := state.obsidian
-  g := state.geode
+	r1 := state.r1
+	r2 := state.r2
+	r3 := state.r3
+	r4 := state.r4
+	t := state.t
+	o := state.ore
+	c := state.clay
+	ob := state.obsidian
+	g := state.geode
 
-  return strings.Join(convStr([]int{o, c, ob, g, r1, r2, r3, r4, t}), "_")
+	return strings.Join(convStr([]int{o, c, ob, g, r1, r2, r3, r4, t}), "_")
 }
-
 
 func parseLine(input string) blueprint {
 	r, _ := regexp.Compile(
 		"^Blueprint ([0-9]+): Each ore robot costs ([0-9]+) ore. Each clay robot costs ([0-9]+) ore. Each obsidian robot costs ([0-9]+) ore and ([0-9]+) clay. Each geode robot costs ([0-9]+) ore and ([0-9]+) obsidian.$",
 	)
 	matches := r.FindStringSubmatch(input)
-	return blueprint{convInt(matches[1]), convInt(matches[2]), convInt(matches[3]), convInt(matches[4]), convInt(matches[5]), convInt(matches[6]), convInt(matches[7])}
+	return blueprint{
+		convInt(matches[1]),
+		convInt(matches[2]),
+		convInt(matches[3]),
+		convInt(matches[4]),
+		convInt(matches[5]),
+		convInt(matches[6]),
+		convInt(matches[7]),
+	}
 }
 
 func part1() int {
@@ -93,7 +98,6 @@ func part1() int {
 	// total quality of all blueprints, quality = id * (# geodes in 24 min)
 	return sum
 }
-
 
 type blueprint struct {
 	id                                        int
@@ -131,7 +135,6 @@ func (s *state) hash(time int) string {
 func (s state) copy() state {
 	return s
 }
-
 
 func (s *state) calcMostGeodes(time int, memo map[string]int, totalTime int, earliestGeode int) int {
 	if time == totalTime {
@@ -215,11 +218,11 @@ func (s *state) calcMostGeodes(time int, memo map[string]int, totalTime int, ear
 
 func parseInput(input string) (ans []blueprint) {
 	for _, line := range strings.Split(input, "\n") {
-    if len(line) == 0 {
-      continue
-    }
+		if len(line) == 0 {
+			continue
+		}
 		bp := parseLine(line)
-    ans = append(ans, bp)
+		ans = append(ans, bp)
 	}
 	return ans
 }

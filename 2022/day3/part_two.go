@@ -2,7 +2,6 @@ package main
 
 import "strings"
 
-
 func part2(input string) int {
 	s := strings.Split(input, "\n")
 	var p1, p2, p3 string

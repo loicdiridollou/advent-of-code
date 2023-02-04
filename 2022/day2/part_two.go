@@ -1,13 +1,9 @@
 package main
 
-import (
-  "os"
-  "strings"
-)
+import "strings"
 
-func part2() int {
-	dat, _ := os.ReadFile("./day2-input")
-	s := strings.Split(string(dat), "\n")
+func part2(input string) int {
+	s := strings.Split(input, "\n")
 	res := ""
 	play := ""
 	score := 0

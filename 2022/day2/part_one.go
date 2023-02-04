@@ -1,9 +1,6 @@
 package main
 
-import (
-	"os"
-	"strings"
-)
+import "strings"
 
 func gameResult(p1 string, p2 string) string {
 	res := ""
@@ -65,9 +62,8 @@ func adaptPlay(opp string, res string) string {
 	return play
 }
 
-func part1() int {
-	dat, _ := os.ReadFile("./day2-input")
-	s := strings.Split(string(dat), "\n")
+func part1(input string) int {
+	s := strings.Split(input, "\n")
 	res := ""
 	score := 0
 	for i := 0; i < len(s)-1; i++ {

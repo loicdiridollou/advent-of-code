@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Day 3")
+	fmt.Println("Day 1")
   var dat []byte
   if len(os.Args) > 1 && os.Args[1] == "test" {
     dat, _ = os.ReadFile("./day1-test-input")

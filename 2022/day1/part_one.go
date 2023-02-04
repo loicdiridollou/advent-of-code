@@ -1,7 +1,6 @@
 package main
 
 import (
-	"os"
 	"strconv"
 	"strings"
 )
@@ -33,9 +32,8 @@ func maxArray(numbs []int) int {
 }
 
 // part1 function
-func part1() int {
-	dat, _ := os.ReadFile("./day1-input")
-	s := strings.Split(string(dat), "\n\n")
+func part1(input string) int {
+	s := strings.Split(input, "\n\n")
 	var res []int
 
 	for i := 0; i < len(s); i++ {

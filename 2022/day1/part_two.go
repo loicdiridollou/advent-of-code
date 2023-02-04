@@ -1,15 +1,13 @@
 package main
 
 import (
-	"os"
 	"sort"
 	"strings"
 )
 
 // part2 function
-func part2() int {
-	dat, _ := os.ReadFile("./day1-input")
-	s := strings.Split(string(dat), "\n\n")
+func part2(input string) int {
+	s := strings.Split(input, "\n\n")
 	var res []int
 
 	for i := 0; i < len(s); i++ {

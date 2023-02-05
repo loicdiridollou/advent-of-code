@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-	"os"
 	"regexp"
 	"strconv"
 	"strings"
@@ -105,30 +103,12 @@ func extractTop(slice [][]string) string {
 	return strings.Join(res, "")
 }
 
-func part1() string {
-	dat, _ := os.ReadFile("./day5-input")
-	s := strings.Split(string(dat), "\n\n")
+func part1(input string) string {
+	s := strings.Split(input, "\n\n")
 	p1 := strings.Split(s[0], "\n")
 	p2 := strings.Split(s[1], "\n")
 	sl := processStack(p1)
 	cmd := processInstructions(p2)
 	res := executeCommands(sl, cmd, true)
 	return extractTop(res)
-}
-
-func part2() string {
-	dat, _ := os.ReadFile("./day5-input")
-	s := strings.Split(string(dat), "\n\n")
-	p1 := strings.Split(s[0], "\n")
-	p2 := strings.Split(s[1], "\n")
-	sl := processStack(p1)
-	cmd := processInstructions(p2)
-	res := executeCommands(sl, cmd, false)
-	return extractTop(res)
-}
-
-func main() {
-	fmt.Println("Part 1 result:", part1())
-	fmt.Println("Part 2 result:", part2())
-	fmt.Println("DONE")
 }

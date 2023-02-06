@@ -17,15 +17,15 @@ speeding up abilities of Go compared to other languages I write code in.
 
 |  Day   |          Title           |                                    Directory                                    | Stars  |
 | :----: | :----------------------: | :-----------------------------------------------------------------------------: | :----: |
-| Day 1  |     Calorie Counting     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day1/)  | ⭐️⭐️ |
-| Day 2  |   Rock Paper Scissors    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day2/)  | ⭐️⭐️ |
-| Day 3  |  Rucksack Organization   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day3/)  | ⭐️⭐️ |
-| Day 4  |       Camp Cleanup       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day4/)  | ⭐️⭐️ |
-| Day 5  |       Supply Stack       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day5/)  | ⭐️⭐️ |
-| Day 6  |      Tuning Trouble      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day6/)  | ⭐️⭐️ |
-| Day 7  | No Space Left On Device  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day7/)  | ⭐️⭐️ |
-| Day 8  |    Treetop Tree House    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day8/)  | ⭐️⭐️ |
-| Day 9  |       Rope Bridge        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day9/)  | ⭐️⭐️ |
+| Day 1  |     Calorie Counting     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day01/) | ⭐️⭐️ |
+| Day 2  |   Rock Paper Scissors    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day02/) | ⭐️⭐️ |
+| Day 3  |  Rucksack Organization   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day03/) | ⭐️⭐️ |
+| Day 4  |       Camp Cleanup       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day04/) | ⭐️⭐️ |
+| Day 5  |       Supply Stack       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day05/) | ⭐️⭐️ |
+| Day 6  |      Tuning Trouble      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day06/) | ⭐️⭐️ |
+| Day 7  | No Space Left On Device  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day07/) | ⭐️⭐️ |
+| Day 8  |    Treetop Tree House    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day08/) | ⭐️⭐️ |
+| Day 9  |       Rope Bridge        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day09/) | ⭐️⭐️ |
 | Day 10 |     Cathode-Ray Tube     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day10/) | ⭐️⭐️ |
 | Day 11 |   Monkey in the Middle   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day11/) | ⭐️⭐️ |
 | Day 12 | Hill Climbing Algorithm  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day12/) | ⭐️⭐️ |

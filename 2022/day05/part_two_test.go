@@ -7,7 +7,7 @@ import (
 
 func Test_part2(t *testing.T) {
   var dat []byte
-  dat, _ = os.ReadFile("./day5-test-input")
+  dat, _ = os.ReadFile("./day05.testinput")
   actual := part2(string(dat))
   expected := "MCD"
   

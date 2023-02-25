@@ -7,9 +7,9 @@ import (
 
 func Test_part1(t *testing.T) {
   var dat []byte
-  dat, _ = os.ReadFile("./day06.testinput")
+  dat, _ = os.ReadFile("./day07.testinput")
   actual := part1(string(dat))
-  expected := 5
+  expected := 95437
   
   if actual != expected {
     t.Errorf("part1() = %v but expects %v", actual, expected)

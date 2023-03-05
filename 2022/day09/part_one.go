@@ -3,7 +3,6 @@ package main
 import (
 	_ "embed"
 	"fmt"
-	"os"
 	"strconv"
 	"strings"
 )
@@ -93,10 +92,8 @@ func (coord *Coord) Adjust(head Coord) {
 	}
 }
 
-func part1() int {
-	dat, _ := os.ReadFile("./day9-input")
-	input := strings.Split(string(dat), "\n")
-	moves := parseInput(input)
+func part1(input string) int {
+	moves := parseInput(strings.Split(input, "\n"))
 	head := Coord{0, 0}
 	tail := Coord{0, 0}
 	tail_positions := map[string]bool{tail.Hash(): true}

@@ -1,14 +1,9 @@
 package main
 
-import (
-	"os"
-	"strings"
-)
+import "strings"
 
-func part2() int {
-	dat, _ := os.ReadFile("./day9-input")
-	input := strings.Split(string(dat), "\n")
-	moves := parseInput(input)
+func part2(input string) int {
+	moves := parseInput(strings.Split(input, "\n"))
 	rope := []Coord{{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}}
 	tail_positions := map[string]bool{rope[9].Hash(): true}
 

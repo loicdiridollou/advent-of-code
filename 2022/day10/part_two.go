@@ -1,11 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
-func part2(input string) int {
+func part2(input string) [6][]string {
 	s := strings.Split(input, "\n")
 	screen := [6][]string{}
 	strength := 1
@@ -46,6 +45,5 @@ func part2(input string) int {
 			idx++
 		}
 	}
-	fmt.Println(screen)
-	return 0
+	return screen
 }

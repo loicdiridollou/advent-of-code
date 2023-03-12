@@ -1,10 +1,15 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
+	"os"
 )
 
 func main() {
-  fmt.Println("Part 1 result:", part1())
-  fmt.Println("Part 2 result:", part2())
+	fmt.Println("Day 12")
+	var dat []byte
+	dat, _ = os.ReadFile("./day12.input")
+
+	fmt.Println(part1(string(dat)))
+	fmt.Println(part2(string(dat)))
 }

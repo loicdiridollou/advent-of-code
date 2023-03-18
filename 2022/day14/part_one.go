@@ -2,7 +2,6 @@ package main
 
 import (
 	_ "embed"
-	"os"
 	"strconv"
 	"strings"
 )
@@ -13,9 +12,8 @@ func convInt(s string) int {
 	return num
 }
 
-func part1() int {
-	dat, _ := os.ReadFile("./day14-input")
-	s := strings.Split(string(dat)[:len(string(dat))-1], "\n")
+func part1(input string) int {
+	s := strings.Split(input[:len(input)-1], "\n")
 	vertices := make([][][2]int, 0)
 	m1, m2, h := 10000, 0, 0
 	var tmp [][2]int

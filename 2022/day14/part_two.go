@@ -1,13 +1,9 @@
 package main
 
-import (
-	"os"
-	"strings"
-)
+import "strings"
 
-func part2() int {
-	dat, _ := os.ReadFile("./day14-input")
-	s := strings.Split(string(dat)[:len(string(dat))-1], "\n")
+func part2(input string) int {
+	s := strings.Split(input[:len(input)-1], "\n")
 	vertices := make([][][2]int, 0)
 	m1, m2, h := 0, 0, 0
 	var tmp [][2]int

@@ -2,7 +2,6 @@ package main
 
 import (
 	_ "embed"
-	"os"
 	"regexp"
 	"strconv"
 	"strings"
@@ -21,27 +20,27 @@ func parseLine(s string) Valve {
 }
 
 type Valve struct {
-  label string
-  rate int
-  connections []string
+	label       string
+	rate        int
+	connections []string
 }
 
 type State struct {
-  valve int
-  open BitSet 
-  pressure int
-  time int
+	valve    int
+	open     BitSet
+	pressure int
+	time     int
 }
 
 type Stack []State
 
 func contains(s []string, e string) bool {
-    for _, a := range s {
-        if a == e {
-            return true
-        }
-    }
-    return false
+	for _, a := range s {
+		if a == e {
+			return true
+		}
+	}
+	return false
 }
 
 type BitSet uint64
@@ -55,14 +54,14 @@ func (b BitSet) IsEmpty(bit int) bool {
 }
 
 func (s *Stack) Pop() State {
-  last := len(*s) - 1
-  state := (*s)[last]
-  *s = (*s)[:last]
-  return state
+	last := len(*s) - 1
+	state := (*s)[last]
+	*s = (*s)[:last]
+	return state
 }
 
 func (s *Stack) Push(state State) {
-  *s = append(*s, state)
+	*s = append(*s, state)
 }
 
 func findShortestDistances(valves []Valve) [][]int {
@@ -98,9 +97,9 @@ func findShortestDistances(valves []Valve) [][]int {
 }
 
 func DFS(valves []Valve, time int) map[BitSet]int {
-  distances := findShortestDistances(valves)
+	distances := findShortestDistances(valves)
 
-  rates := make([]int, len(valves))
+	rates := make([]int, len(valves))
 	start := 0
 	for i := range valves {
 		rates[i] = valves[i].rate
@@ -108,7 +107,7 @@ func DFS(valves []Valve, time int) map[BitSet]int {
 			start = i
 		}
 	}
-  states := make(map[BitSet]int)
+	states := make(map[BitSet]int)
 	stack := Stack{
 		State{
 			start,
@@ -117,51 +116,49 @@ func DFS(valves []Valve, time int) map[BitSet]int {
 			time,
 		},
 	}
-  //for _, valve := range valves {
-    for len(stack) != 0 {
-      current := stack.Pop()
-      if states[current.open] < current.pressure {
-        states[current.open] = current.pressure
-      }
-      if current.time > 0 {
-        rate := rates[current.valve]
-        if rate != 0 && current.open.IsEmpty(current.valve) {
-          time := current.time - 1
-          stack.Push(State{
-            current.valve,
-            current.open.WithSet(current.valve),
-            current.pressure + rate * time,
-            time,
-          })
-        } else {
-          for next, d := range distances[current.valve] {
-            if next != current.valve && rates[next] != 0 && current.open.IsEmpty(next) && current.time > d {
-              stack.Push(State{
-                next,
-                current.open,
-                current.pressure,
-                current.time - d,
-              })
-            }
-          }
-        }
-      }
-    }
-  
 
-  return states
+	for len(stack) != 0 {
+		current := stack.Pop()
+		if states[current.open] < current.pressure {
+			states[current.open] = current.pressure
+		}
+		if current.time > 0 {
+			rate := rates[current.valve]
+			if rate != 0 && current.open.IsEmpty(current.valve) {
+				time := current.time - 1
+				stack.Push(State{
+					current.valve,
+					current.open.WithSet(current.valve),
+					current.pressure + rate*time,
+					time,
+				})
+			} else {
+				for next, d := range distances[current.valve] {
+					if next != current.valve && rates[next] != 0 && current.open.IsEmpty(next) && current.time > d {
+						stack.Push(State{
+							next,
+							current.open,
+							current.pressure,
+							current.time - d,
+						})
+					}
+				}
+			}
+		}
+	}
+
+	return states
 }
 
-func part1() int {
-	dat, _ := os.ReadFile("./day16-input")
-	s := strings.Split(string(dat), "\n")
+func part1(input string) int {
+	s := strings.Split(input, "\n")
 
 	var readings []Valve
-  for _, ln := range s[:len(s)-1] {
+	for _, ln := range s[:len(s)-1] {
 		readings = append(readings, parseLine(ln))
 	}
 
-  paths := DFS(readings, 30)
+	paths := DFS(readings, 30)
 
 	max := 0
 	for _, pressure := range paths {

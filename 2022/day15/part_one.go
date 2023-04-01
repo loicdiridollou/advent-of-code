@@ -2,7 +2,6 @@ package main
 
 import (
 	_ "embed"
-	"os"
 	"regexp"
 	"strconv"
 	"strings"
@@ -51,10 +50,8 @@ func (is *Intervals) Add(from, to int) {
 	copy((*is)[len(l)+1:], r)
 }
 
-func part1() int {
-	dat, _ := os.ReadFile("./day15-input")
-	input := string(dat)[:len(string(dat))-1]
-	row := 2000000
+func part1(input string, row int) int {
+	input = input[:len(input)-1]
 	s := strings.Split(input, "\n")
 
 	var readings [][2][2]int

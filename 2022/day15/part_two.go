@@ -1,7 +1,6 @@
 package main
 
 import (
-	"os"
 	"strings"
 )
 
@@ -21,9 +20,8 @@ func validPoint(x, y int, sensors []Sensor) bool {
 	return true
 }
 
-func part2() int {
-	dat, _ := os.ReadFile("./day15-input")
-	input := string(dat)[:len(string(dat))-1]
+func part2(input string, max_loc int) int {
+	input = input[:len(input)-1]
 	s := strings.Split(input, "\n")
 
 	var readings [][2][2]int
@@ -47,7 +45,7 @@ func part2() int {
 			for _, sign := range signs {
 				x := sn.x + dx*sign[0]
 				y := sn.y + dy*sign[1]
-				if !(x >= 0 && x <= 4000000 && y >= 0 && y <= 4000000) {
+				if !(x >= 0 && x <= max_loc && y >= 0 && y <= max_loc) {
 					continue
 				}
 				if validPoint(x, y, sensors) && !found {

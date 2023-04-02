@@ -3,7 +3,6 @@ package main
 import (
 	_ "embed"
 	"fmt"
-	"os"
 	"sort"
 )
 
@@ -29,9 +28,8 @@ func signature(r Floor) string {
 	return str[:len(str)-1]
 }
 
-func part2() int {
-	dat, _ := os.ReadFile("./day17-input")
-	s := string(dat)[:len(string(dat))-1]
+func part2(input string) int {
+	s := input[:len(input)-1]
 
 	tab := make([]Coord, 7)
 	for i := 0; i < 7; i++ {

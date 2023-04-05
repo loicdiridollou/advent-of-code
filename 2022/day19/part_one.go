@@ -3,7 +3,6 @@ package main
 import (
 	_ "embed"
 	"fmt"
-	"os"
 	"regexp"
 	"strconv"
 	"strings"
@@ -84,9 +83,8 @@ func parseLine(input string) blueprint {
 	}
 }
 
-func part1() int {
-	dat, _ := os.ReadFile("./day19-input")
-	blueprints := parseInput(string(dat))
+func part1(input string) int {
+	blueprints := parseInput(input)
 
 	sum := 0
 	for _, bp := range blueprints {

@@ -2,12 +2,10 @@ package main
 
 import (
 	_ "embed"
-	"os"
 )
 
-func part2() int {
-	dat, _ := os.ReadFile("./day19-input")
-  blueprints := parseInput(string(dat))
+func part2(input string) int {
+	blueprints := parseInput(input)
 	if len(blueprints) > 3 {
 		blueprints = blueprints[:3]
 	}

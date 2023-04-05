@@ -2,7 +2,6 @@ package main
 
 import (
 	_ "embed"
-	"os"
 	"strconv"
 	"strings"
 )
@@ -49,11 +48,10 @@ func find(name string, monkeys map[string]Monkey, h float64) float64 {
 	return val
 }
 
-func part2() float64 {
-	dat, _ := os.ReadFile("./day21-input")
-	input := strings.Split(string(dat), "\n")
-	input = input[:len(input)-1]
-	monkeys := parseLine(input)
+func part2(input string) float64 {
+	input_data := strings.Split(input, "\n")
+	input_data = input_data[:len(input_data)-1]
+	monkeys := parseLine(input_data)
 
 	var lo, hi float64 = 0, 1e13
 	target := find(string(monkeys["root"].wait[7:]), monkeys, 0)

@@ -2,7 +2,6 @@ package main
 
 import (
 	_ "embed"
-	"os"
 	"strconv"
 	"strings"
 )
@@ -13,14 +12,13 @@ type Monkey struct {
 	wait string
 }
 
-func part1() int {
-	dat, _ := os.ReadFile("./day21-input")
-	input := strings.Split(string(dat), "\n")
-	input = input[:len(input)-1]
+func part1(input string) int {
+	input_data := strings.Split(input, "\n")
+	input_data = input_data[:len(input_data)-1]
 	var monkeys []Monkey
 	monkeys_map := make(map[string]int, 0)
 
-	for _, el := range input {
+	for _, el := range input_data {
 		p := strings.Split(string(el), ": ")
 		num, err := strconv.Atoi(p[1])
 		if err != nil {

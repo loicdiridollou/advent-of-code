@@ -343,10 +343,8 @@ func readInput() []string {
 	return lines
 }
 
-func part2() int {
-	dat, _ := os.ReadFile("./day22-input")
-  input := string(dat)
-	cube := parseInput(strings.Split(string(input), "\n"))
+func part2(input string) int {
+	cube := parseInput(strings.Split(input, "\n"))
 	cube.run()
 	return cube.p.password()
 }

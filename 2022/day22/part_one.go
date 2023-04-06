@@ -2,7 +2,6 @@ package main
 
 import (
 	_ "embed"
-	"os"
 	"strconv"
 	"strings"
 )
@@ -45,9 +44,9 @@ func splitPath(path string) []string {
 			res = append(res, string(path[i]))
 		} else {
 			tmp = tmp + string(path[i])
-      if i == len(path)-1 {
-        res = append(res, tmp)
-      }
+			if i == len(path)-1 {
+				res = append(res, tmp)
+			}
 		}
 	}
 
@@ -70,47 +69,45 @@ func convertDir(dir string) [2]int {
 }
 
 func moveOnGrid(grid [][]string, start_pos [2]int, steps int, dir string) [2]int {
-  rr, cc := convertDir(dir)[0], convertDir(dir)[1]
+	rr, cc := convertDir(dir)[0], convertDir(dir)[1]
 	for i := 0; i < steps; i++ {
-    nr, nc := (start_pos[0]+rr+len(grid))%len(grid), (start_pos[1]+cc+len(grid[0]))%len(grid[0])
-    if grid[nr][nc] == "#" {
-      break
-    } else if grid[nr][nc] == " " {
-      tmp := start_pos
-      for grid[nr][nc] == " " {
-        nr, nc = (start_pos[0]+rr+len(grid))%len(grid), (start_pos[1]+cc+len(grid[0]))%len(grid[0])
-        start_pos = [2]int{nr, nc}
-      }
-      if grid[nr][nc] == "#" {
-        nr, nc := (tmp[0]-rr+len(grid))%len(grid), (tmp[1]-cc+len(grid[0]))%len(grid[0])
-        start_pos = [2]int{nr, nc}
-      } else {
-        start_pos = [2]int{nr, nc}
-      }
+		nr, nc := (start_pos[0]+rr+len(grid))%len(grid), (start_pos[1]+cc+len(grid[0]))%len(grid[0])
+		if grid[nr][nc] == "#" {
+			break
+		} else if grid[nr][nc] == " " {
+			tmp := start_pos
+			for grid[nr][nc] == " " {
+				nr, nc = (start_pos[0]+rr+len(grid))%len(grid), (start_pos[1]+cc+len(grid[0]))%len(grid[0])
+				start_pos = [2]int{nr, nc}
+			}
+			if grid[nr][nc] == "#" {
+				nr, nc := (tmp[0]-rr+len(grid))%len(grid), (tmp[1]-cc+len(grid[0]))%len(grid[0])
+				start_pos = [2]int{nr, nc}
+			} else {
+				start_pos = [2]int{nr, nc}
+			}
 
-    } else {
-      start_pos = [2]int{nr, nc}
-    }
-  }
+		} else {
+			start_pos = [2]int{nr, nc}
+		}
+	}
 	return start_pos
 }
 
-
 func getDest(r int, c int, d int, grid [][]string, D [][]int) (int, int, int) {
-  r = (r+D[d][0] + len(grid))%len(grid)
-  c = (c+D[d][1]+len(grid[0]))%len(grid[0])
-  for grid[r][c] == " " {
-    r = (r+D[d][0] + len(grid))%len(grid)
-    c = (c+D[d][1]+len(grid[0]))%len(grid[0])
-  }
-  return r, c, d
+	r = (r + D[d][0] + len(grid)) % len(grid)
+	c = (c + D[d][1] + len(grid[0])) % len(grid[0])
+	for grid[r][c] == " " {
+		r = (r + D[d][0] + len(grid)) % len(grid)
+		c = (c + D[d][1] + len(grid[0])) % len(grid[0])
+	}
+	return r, c, d
 }
 
-func part1() int {
-	dat, _ := os.ReadFile("./day22-input")
-	input := strings.Split(string(dat), "\n\n")
-	maze := input[0]
-	path := splitPath(strings.Replace(input[1], "\n", "", 1))
+func part1(input string) int {
+	input_data := strings.Split(input, "\n\n")
+	maze := input_data[0]
+	path := splitPath(strings.Replace(input_data[1], "\n", "", 1))
 
 	var max int
 
@@ -130,55 +127,54 @@ func part1() int {
 		grid = append(grid, strings.Split(el, ""))
 	}
 
-  
-  r, c, d := 0, 0, 0
-  var rr, cc int
-  for grid[r][c] != "." {
-    c++
-  }
-  dirs := [][]int{{0, 1}, {1, 0}, {0, -1}, {-1, 0}}
+	r, c, d := 0, 0, 0
+	var rr, cc int
+	for grid[r][c] != "." {
+		c++
+	}
+	dirs := [][]int{{0, 1}, {1, 0}, {0, -1}, {-1, 0}}
 
 	for i := 0; i < (len(path)/2)*2; i += 2 {
-    for j := 0; j < convInt(path[i]); j++ {
-      rr = (r+dirs[d][0]+len(grid))%len(grid)
-      cc = (c+dirs[d][1]+len(grid[0]))%len(grid[0])
-      if grid[rr][cc] == " " {
-        nr, nc, nd := getDest(r, c, d, grid, dirs)
-        if grid[nr][nc] == "#" {
-          break
-        }
-        r, c, d = nr, nc, nd
-        continue
-      } else if grid[rr][cc] == "#" {
-        break
-      } else {
-        r, c  = rr, cc
-      }
-    }
-    if path[i+1] == "L" {
-      d = (d+3)%4
-    } else {
-      d = (d+1)%4
-    }
-  }
-  if len(path) % 2 == 1 {
-    for k := 0; k < convInt(path[len(path)-1]); k++ {
-      rr = (r+dirs[d][0]+len(grid))%len(grid)
-      cc = (c+dirs[d][1]+len(grid[0]))%len(grid[0])
-      if grid[rr][cc] == " " {
-        nr, nc, nd := getDest(r, c, d, grid, dirs)
-        if grid[nr][nc] == "#" {
-          break
-        }
-        r, c, d = nr, nc, nd
-        continue
-      } else if grid[rr][cc] == "#" {
-        break
-      } else {
-        r, c  = rr, cc
-      }
-    }
-  }
+		for j := 0; j < convInt(path[i]); j++ {
+			rr = (r + dirs[d][0] + len(grid)) % len(grid)
+			cc = (c + dirs[d][1] + len(grid[0])) % len(grid[0])
+			if grid[rr][cc] == " " {
+				nr, nc, nd := getDest(r, c, d, grid, dirs)
+				if grid[nr][nc] == "#" {
+					break
+				}
+				r, c, d = nr, nc, nd
+				continue
+			} else if grid[rr][cc] == "#" {
+				break
+			} else {
+				r, c = rr, cc
+			}
+		}
+		if path[i+1] == "L" {
+			d = (d + 3) % 4
+		} else {
+			d = (d + 1) % 4
+		}
+	}
+	if len(path)%2 == 1 {
+		for k := 0; k < convInt(path[len(path)-1]); k++ {
+			rr = (r + dirs[d][0] + len(grid)) % len(grid)
+			cc = (c + dirs[d][1] + len(grid[0])) % len(grid[0])
+			if grid[rr][cc] == " " {
+				nr, nc, nd := getDest(r, c, d, grid, dirs)
+				if grid[nr][nc] == "#" {
+					break
+				}
+				r, c, d = nr, nc, nd
+				continue
+			} else if grid[rr][cc] == "#" {
+				break
+			} else {
+				r, c = rr, cc
+			}
+		}
+	}
 
-	return 1000 * (r + 1) + 4 * (c + 1) + d 
+	return 1000*(r+1) + 4*(c+1) + d
 }

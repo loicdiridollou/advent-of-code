@@ -2,7 +2,6 @@ package main
 
 import (
 	_ "embed"
-	"os"
 	"strings"
 )
 
@@ -45,9 +44,8 @@ func reverse(s []string) []string {
 	return s
 }
 
-func part1() string {
-	dat, _ := os.ReadFile("./day25-input")
-	numbers := parseInput(string(dat))
+func part1(input string) string {
+	numbers := parseInput(input)
 	maxSize := MaxSize(numbers...)
 
 	res := []string{}

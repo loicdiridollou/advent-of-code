@@ -3,7 +3,6 @@ package main
 import (
 	_ "embed"
 	"fmt"
-	"os"
 	"strings"
 )
 
@@ -173,14 +172,13 @@ func hashMove(exp Exp, round int) string {
 	return fmt.Sprint(exp.r) + "_" + fmt.Sprint(exp.c) + "_" + fmt.Sprint(round)
 }
 
-func part1() int {
-	dat, _ := os.ReadFile("./day24-input")
-	input := strings.Split(string(dat), "\n")
-	input = input[:len(input)-1]
+func part1(input string) int {
+	input_data := strings.Split(input, "\n")
+	input_data = input_data[:len(input_data)-1]
 
-	blizs, start, end := parseInput(input)
+	blizs, start, end := parseInput(input_data)
 	exp := Exp{start[0], start[1]}
-	limitb, limitr := findDim(input)
+	limitb, limitr := findDim(input_data)
 	round := 0
 	queue := []Exp{exp}
 	arrived := false

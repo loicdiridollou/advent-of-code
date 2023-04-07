@@ -3,7 +3,6 @@ package main
 import (
 	_ "embed"
 	"fmt"
-	"os"
 	"strconv"
 	"strings"
 )
@@ -136,11 +135,10 @@ func findMoves(elves []Elf, rot int) (map[string]string, map[string]int) {
 	return moves, list_move
 }
 
-func part1() int {
-	dat, _ := os.ReadFile("./day23-input")
-	input := strings.Split(string(dat), "\n")
+func part1(input string) int {
+	input_data := strings.Split(input, "\n")
 
-	elves := parseInput(input)
+	elves := parseInput(input_data)
 	rot := 0
 
 	for round := 0; round < 10; round++ {

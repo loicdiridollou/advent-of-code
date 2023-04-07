@@ -1,15 +1,13 @@
 package main
 
 import (
-	"os"
 	"strings"
 )
 
-func part2() int {
-	dat, _ := os.ReadFile("./day23-input")
-	input := strings.Split(string(dat), "\n")
+func part2(input string) int {
+	input_data := strings.Split(input, "\n")
 
-	elves := parseInput(input)
+	elves := parseInput(input_data)
 	rot := 0
 	score := 0
 	round := 0

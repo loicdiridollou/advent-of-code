@@ -13,6 +13,12 @@ speeding up abilities of Go compared to other languages I write code in.
 
 ## Table of Contents
 
+### 2021
+
+|  Day  |    Title    |                                    Directory                                    | Stars  |
+| :---: | :---------: | :-----------------------------------------------------------------------------: | :----: |
+| Day 1 | Sonar Sweep | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day01/) | ⭐️⭐️ |
+
 ### 2022
 
 |  Day   |          Title           |                                    Directory                                    | Stars  |

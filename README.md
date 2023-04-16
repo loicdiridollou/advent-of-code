@@ -15,9 +15,32 @@ speeding up abilities of Go compared to other languages I write code in.
 
 ### 2021
 
-|  Day  |    Title    |                                    Directory                                    | Stars  |
-| :---: | :---------: | :-----------------------------------------------------------------------------: | :----: |
-| Day 1 | Sonar Sweep | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day01/) | ⭐️⭐️ |
+|  Day   |          Title          |                                    Directory                                    | Stars  |
+| :----: | :---------------------: | :-----------------------------------------------------------------------------: | :----: |
+| Day 1  |       Sonar Sweep       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day01/) | ⭐️⭐️ |
+| Day 3  |         Dive !          | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day03/) | ⭐️⭐️ |
+| Day 4  |    Binary Diagnostic    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day04/) |        |
+| Day 5  |      Griant Squid       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day05/) |        |
+| Day 6  |  Hydrothermal Venture   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day06/) |        |
+| Day 7  |       Lanternfish       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day07/) |        |
+| Day 8  |  Seven Segment Search   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day08/) |        |
+| Day 9  |       Smoke Basin       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day09/) |        |
+| Day 10 |     Syntax Scoring      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day10/) |        |
+| Day 11 |      Dumbo Octopus      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day11/) |        |
+| Day 12 |     Passage Pathing     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day12/) |        |
+| Day 13 |   Transparent Origami   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day13/) |        |
+| Day 14 | Extended Polymerization | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day14/) |        |
+| Day 15 |         Chiton          | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day15/) |        |
+| Day 16 |     Packet Decoder      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day16/) |        |
+| Day 17 |       Trick Shot        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day17/) |        |
+| Day 18 |        Snailfish        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day18/) |        |
+| Day 19 |     Beacon Scanner      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day19/) |        |
+| Day 20 |       Trench Map        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day20/) |        |
+| Day 21 |       Dirac Dice        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day21/) |        |
+| Day 22 |     Reactor Reboot      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day22/) |        |
+| Day 23 |        Amphipod         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day23/) |        |
+| Day 24 |  Arithmetic Logic Unit  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day24/) |        |
+| Day 25 |      Sea Cucumber       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day25/) |        |
 
 ### 2022
 

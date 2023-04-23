@@ -21,8 +21,8 @@ speeding up abilities of Go compared to other languages I write code in.
 | Day 3  |         Dive !          | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day03/) | ⭐️⭐️ |
 | Day 4  |    Binary Diagnostic    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day04/) | ⭐️⭐️ |
 | Day 5  |      Griant Squid       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day05/) | ⭐️⭐️ |
-| Day 6  |  Hydrothermal Venture   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day06/) |        |
-| Day 7  |       Lanternfish       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day07/) |        |
+| Day 6  |  Hydrothermal Venture   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day06/) | ⭐️⭐️ |
+| Day 7  |       Lanternfish       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day07/) | ⭐️⭐️ |
 | Day 8  |  Seven Segment Search   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day08/) |        |
 | Day 9  |       Smoke Basin       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day09/) |        |
 | Day 10 |     Syntax Scoring      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day10/) |        |

@@ -7,9 +7,9 @@
 This repository compiles all the solutions for the daily problems of the
 [Advent of Code](https://adventofcode.com/).
 
-For 2022 I am using this opportunity to work on my Go skills as I don't usually
-write Go for work. I get to learn more on the structure, performance and
-speeding up abilities of Go compared to other languages I write code in.
+I am using this opportunity to work on my Go skills as I don't usually write Go
+for work. I get to learn more on the structure, performance and speeding up
+abilities of Go compared to other languages I write code in.
 
 ## Table of Contents
 
@@ -25,7 +25,7 @@ speeding up abilities of Go compared to other languages I write code in.
 | Day 7  |       Lanternfish       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day07/) | ⭐️⭐️ |
 | Day 8  |  Seven Segment Search   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day08/) | ⭐️⭐️ |
 | Day 9  |       Smoke Basin       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day09/) | ⭐️⭐️ |
-| Day 10 |     Syntax Scoring      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day10/) |        |
+| Day 10 |     Syntax Scoring      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day10/) | ⭐️⭐️ |
 | Day 11 |      Dumbo Octopus      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day11/) |        |
 | Day 12 |     Passage Pathing     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day12/) |        |
 | Day 13 |   Transparent Origami   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day13/) |        |

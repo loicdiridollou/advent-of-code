@@ -4,6 +4,23 @@ import (
 	"strings"
 )
 
+func canVisit(path []string, cave string, num_visits int) bool {
+	tmp_visit := 0
+	if cave == "start" {
+		return false
+	}
+	for _, past_cave := range path {
+		if strings.ToLower(past_cave) == past_cave && cave == past_cave {
+			tmp_visit++
+		}
+	}
+	if cave == "end" {
+		return tmp_visit+1 < num_visits
+	}
+
+	return tmp_visit < num_visits
+}
+
 func prepareData(input string) map[string][]string {
 	caves := make(map[string][]string, 0)
 

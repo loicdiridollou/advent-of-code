@@ -1,40 +1,56 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
-func canVisit(path []string, cave string, num_visits int) bool {
-	tmp_visit := 0
-	if cave == "start" {
-		return false
+func sliceContains(slice []string, val string) int {
+	num := 0
+	if strings.ToUpper(val) == val {
+		return 0
 	}
-	if cave == "end" {
-		return false
-	}
-	for _, past_cave := range path {
-		if strings.ToLower(past_cave) == past_cave && cave == past_cave {
-			fmt.Println(past_cave)
-			tmp_visit++
+	for _, el := range slice {
+		if el == val {
+			num++
 		}
 	}
-	return tmp_visit < num_visits
+	return num
+}
+
+func Counter(s []string) map[string]int {
+	dic := make(map[string]int)
+
+	for _, el := range s {
+		_, exists := dic[string(el)]
+		if !exists {
+			dic[string(el)] = 0
+		}
+		dic[string(el)] += 1
+	}
+
+	return dic
+}
+
+func smallCaveVisitedTwice(path []string) bool {
+	counter := Counter(path)
+	for j, k := range counter {
+		if k == 2 && strings.ToLower(j) == j {
+			return false
+		}
+	}
+	return true
 }
 
 func visitCavesDouble(position string, caves map[string][]string, current_path []string) [][]string {
 	list_paths := make([][]string, 0)
 
 	for _, cave := range caves[position] {
-		if cave == "end" && current_path[len(current_path)-1] != "end" {
+		if cave == "end" {
 			list_paths = append(list_paths, append(current_path, "end"))
-		} else if canVisit(current_path, cave, 2) {
-			new_path := append(current_path, cave)
-			new_paths := visitCavesDouble(cave, caves, new_path)
-			if len(new_paths) > 0 {
-				fmt.Println(current_path, new_paths)
-				list_paths = append(list_paths, new_paths...)
-			}
+		} else if sliceContains(current_path, cave) < 2 && smallCaveVisitedTwice(current_path) {
+			list_paths = append(list_paths, visitCavesDouble(cave, caves, append(current_path, cave))...)
+		} else if sliceContains(current_path, cave) == 0 {
+			list_paths = append(list_paths, visitCavesDouble(cave, caves, append(current_path, cave))...)
 		}
 	}
 

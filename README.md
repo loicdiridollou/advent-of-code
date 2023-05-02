@@ -23,11 +23,11 @@ abilities of Go compared to other languages I write code in.
 | Day 5  |      Griant Squid       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day05/) | ⭐️⭐️ |
 | Day 6  |  Hydrothermal Venture   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day06/) | ⭐️⭐️ |
 | Day 7  |       Lanternfish       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day07/) | ⭐️⭐️ |
-| Day 8  |  Seven Segment Search   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day08/) | ⭐️⭐️ |
+| Day 8  |  Seven Segment Search   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day08/) |        |
 | Day 9  |       Smoke Basin       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day09/) | ⭐️⭐️ |
 | Day 10 |     Syntax Scoring      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day10/) | ⭐️⭐️ |
-| Day 11 |      Dumbo Octopus      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day11/) |        |
-| Day 12 |     Passage Pathing     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day12/) |        |
+| Day 11 |      Dumbo Octopus      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day11/) | ⭐️⭐️ |
+| Day 12 |     Passage Pathing     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day12/) | ⭐️⭐️ |
 | Day 13 |   Transparent Origami   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day13/) |        |
 | Day 14 | Extended Polymerization | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day14/) |        |
 | Day 15 |         Chiton          | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day15/) |        |

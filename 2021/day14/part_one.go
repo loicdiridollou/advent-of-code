@@ -1,7 +1,6 @@
 package main
 
 import (
-	"math"
 	"regexp"
 	"strings"
 )
@@ -53,7 +52,7 @@ func copyMap(originalMap map[string]int) map[string]int {
 }
 
 func getMinMax(dic map[string]int) (int, int) {
-	min, max := int(math.Inf(1)), 0
+	min, max := int(1e18), 0
 
 	for _, j := range dic {
 		if j < min {

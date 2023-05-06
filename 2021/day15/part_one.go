@@ -1,11 +1,8 @@
 package main
 
 import (
-	"bufio"
-	"fmt"
-	"math"
-	"os"
 	"strconv"
+	"strings"
 )
 
 func StrToInt(input string) int {
@@ -13,84 +10,32 @@ func StrToInt(input string) int {
 	return num
 }
 
-type Node struct {
-	risk        int
-	distance    int
-	predecessor string
-}
+func parseInput(lines []string) *Graph {
+	g := &Graph{}
+	g.s = len(lines)
+	g.g = make([][]int, g.s)
+	for i := 0; i < g.s; i++ {
+		g.g[i] = make([]int, g.s)
+	}
 
-func strip(y, x int) string {
-	return fmt.Sprintf("%d-%d", y, x)
-}
-
-func unStrip(position string) (y, x int) {
-	fmt.Sscanf(position, "%d-%d", &y, &x)
-	return
-}
-
-func getNextNode(unvisited map[string]bool, state map[string]Node) (nextNode string) {
-	minDistance := 0
-	for node := range unvisited {
-		if state[node].distance < minDistance || nextNode == "" {
-			nextNode = node
-			minDistance = state[node].distance
+	for y, line := range lines {
+		for x, cell := range line {
+			g.g[y][x] = StrToInt(string(cell))
 		}
 	}
-	return
+
+	return g
 }
 
-func part1(_ string) int {
-	//Read the file
-	input, _ := os.Open("day15.input")
-	defer input.Close()
-	sc := bufio.NewScanner(input)
-
-	unvisited := make(map[string]bool)
-	visited := make(map[string]bool)
-	state := make(map[string]Node)
-
-	var numberOfLines, numberOfColumns int
-	for sc.Scan() {
-		numberOfColumns = 0
-		for _, risk := range sc.Text() {
-			node := strip(numberOfLines, numberOfColumns)
-			unvisited[node] = true
-			state[node] = Node{int(risk) - 48, math.MaxInt64, ""}
-			numberOfColumns++
+func part1(input string) int {
+	lines := make([]string, 0)
+	for _, line := range strings.Split(input, "\n") {
+		if len(line) == 0 {
+			continue
 		}
-		numberOfLines++
+		lines = append(lines, line)
 	}
-	state["0-0"] = Node{state["0-0"].risk, 0, ""}
-
-	endNode := strip(numberOfLines-1, numberOfColumns-1)
-	for len(unvisited) != 0 && state[endNode].distance == math.MaxInt64 {
-		currentNode := getNextNode(unvisited, state)
-		y, x := unStrip(currentNode)
-
-		var neighbours []string
-		if y > 0 {
-			neighbours = append(neighbours, strip(y-1, x))
-		}
-		if y < numberOfLines-1 {
-			neighbours = append(neighbours, strip(y+1, x))
-		}
-		if x > 0 {
-			neighbours = append(neighbours, strip(y, x-1))
-		}
-		if x < numberOfColumns-1 {
-			neighbours = append(neighbours, strip(y, x+1))
-		}
-
-		for _, neighbour := range neighbours {
-			if state[currentNode].distance+state[neighbour].risk < state[neighbour].distance {
-				newState := state[neighbour]
-				newState.distance = state[currentNode].distance + state[neighbour].risk
-				newState.predecessor = currentNode
-				state[neighbour] = newState
-			}
-		}
-		visited[currentNode] = true
-		delete(unvisited, currentNode)
-	}
-	return state[endNode].distance
+	g := parseInput(lines)
+	d, _ := g.dijkstra(0)
+	return d[g.s*g.s]
 }

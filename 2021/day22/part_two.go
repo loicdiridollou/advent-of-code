@@ -28,8 +28,7 @@ func countCubes(ops []Operation) int {
 	return res
 }
 
-func part2(input string) int {
-	operations := prepareData(input)
+func processOperations(operations []Operation) []Operation {
 	tot_ops := make([]Operation, 0)
 
 	for _, op1 := range operations {
@@ -43,12 +42,15 @@ func part2(input string) int {
 				continue
 			}
 
+			// create intersection between the two operations
 			cx_min := MaxInt(op1.min_x, op2.min_x)
 			cx_max := MinInt(op1.max_x, op2.max_x)
 			cy_min := MaxInt(op1.min_y, op2.min_y)
 			cy_max := MinInt(op1.max_y, op2.max_y)
 			cz_min := MaxInt(op1.min_z, op2.min_z)
 			cz_max := MinInt(op1.max_z, op2.max_z)
+
+			// flipping the sign to make sure we don't double count
 			var new_type string
 			if op2.type_op == "on" {
 				new_type = "off"
@@ -65,5 +67,12 @@ func part2(input string) int {
 		}
 		tot_ops = append(tot_ops, tmp_add...)
 	}
+
+	return tot_ops
+}
+
+func part2(input string) int {
+	operations := prepareData(input)
+	tot_ops := processOperations(operations)
 	return countCubes(tot_ops)
 }

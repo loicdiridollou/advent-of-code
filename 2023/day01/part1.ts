@@ -1,15 +1,14 @@
-import fs from "fs";
-
+// Part 1 for day 01 of 2023
 function is_numeric(str: string) {
   return /^\d+$/.test(str);
 }
-const words = fs.readFileSync("./2023/day01/part1.txt", "utf-8");
-console.log(
-  words
+
+export function part1(words: string): number {
+  return words
     .split("\n")
     .map((group) => group.split("").filter(is_numeric))
     .filter((group) => group.length > 0)
     .map((group) => group[0] + group[group.length - 1])
     .map((val) => parseInt(val))
-    .reduce((sum, current) => sum + current, 0),
-);
+    .reduce((sum, current) => sum + current, 0);
+}

@@ -1,11 +1,12 @@
-job1:
-  image: golang:1.20
+stages:
+  - build-go
+  - build-typescript
+  - test-typescript
 
-  stages:
-    - build
 
-  test:
-    stage: build
+test:
+    image: golang:1.20
+    stage: build-go
     script:
       - go test -coverprofile=coverage.out -json ./... | tee test-report.json
     artifacts:
@@ -15,33 +16,24 @@ job1:
         - coverage.out
       expire_in: 10 minutes
 
-job2:
+build-typescript:
   image: node:latest
 
-  variables:
-    SCOPE: MY-SCOPE
-
-  stages:
-    - build
-    - test
-    - publish
-
-  build:
-    stage: build
-    artifacts:
-      paths:
+  stage: build-typescript
+  artifacts:
+    paths:
         - dist
-    cache:
+  cache:
       key: $CI_COMMIT_REF_NAME
       policy: push
       paths:
         - node_modules
-    script:
+  script:
       - yarn
       - yarn build
 
-  test:
-    stage: test
+test-typescript:
+    stage: test-typescript
     cache:
       key: $CI_COMMIT_REF_NAME
       policy: pull

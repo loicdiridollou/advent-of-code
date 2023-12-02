@@ -1,0 +1,52 @@
+job1:
+  image: golang:1.20
+
+  stages:
+    - build
+
+  test:
+    stage: build
+    script:
+      - go test -coverprofile=coverage.out -json ./... | tee test-report.json
+    artifacts:
+      when: always
+      paths:
+        - test-report.json
+        - coverage.out
+      expire_in: 10 minutes
+
+job2:
+  image: node:latest
+
+  variables:
+    SCOPE: MY-SCOPE
+
+  stages:
+    - build
+    - test
+    - publish
+
+  build:
+    stage: build
+    artifacts:
+      paths:
+        - dist
+    cache:
+      key: $CI_COMMIT_REF_NAME
+      policy: push
+      paths:
+        - node_modules
+    script:
+      - yarn
+      - yarn build
+
+  test:
+    stage: test
+    cache:
+      key: $CI_COMMIT_REF_NAME
+      policy: pull
+      paths:
+        - node_modules
+    script:
+      - yarn test
+    coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'

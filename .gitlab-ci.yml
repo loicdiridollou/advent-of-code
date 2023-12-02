@@ -1,20 +1,19 @@
 stages:
-  - build-go
+  - ci-go
   - build-typescript
   - test-typescript
 
-
-test:
-    image: golang:1.20
-    stage: build-go
-    script:
-      - go test -coverprofile=coverage.out -json ./... | tee test-report.json
-    artifacts:
-      when: always
-      paths:
-        - test-report.json
-        - coverage.out
-      expire_in: 10 minutes
+ci-go:
+  image: golang:1.20
+  stage: ci-go
+  script:
+    - go test -coverprofile=coverage.out -json ./... | tee test-report.json
+  artifacts:
+    when: always
+    paths:
+      - test-report.json
+      - coverage.out
+    expire_in: 10 minutes
 
 build-typescript:
   image: node:latest
@@ -22,23 +21,24 @@ build-typescript:
   stage: build-typescript
   artifacts:
     paths:
-        - dist
+      - dist
   cache:
-      key: $CI_COMMIT_REF_NAME
-      policy: push
-      paths:
-        - node_modules
+    key: $CI_COMMIT_REF_NAME
+    policy: push
+    paths:
+      - node_modules
   script:
-      - yarn
-      - yarn build
+    - yarn
+    - yarn build
 
 test-typescript:
-    stage: test-typescript
-    cache:
-      key: $CI_COMMIT_REF_NAME
-      policy: pull
-      paths:
-        - node_modules
-    script:
-      - yarn test
-    coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'
+  image: node:latest
+  stage: test-typescript
+  cache:
+    key: $CI_COMMIT_REF_NAME
+    policy: pull
+    paths:
+      - node_modules
+  script:
+    - yarn test
+  coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'

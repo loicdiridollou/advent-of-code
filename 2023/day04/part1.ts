@@ -1,4 +1,4 @@
-// Part 1 for day 02 of 2023
+// Part 1 for day 04 of 2023
 
 export function part1(input: string): number {
   return input

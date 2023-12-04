@@ -14,16 +14,12 @@ export function part2(input: string): number {
     .filter((group) => group != "")
     .map((group) => group.split(":"))
     .forEach((group) => {
-      let cards = group[1];
       let tmp_num = group[0].split(" ");
       let card_number = parseInt(tmp_num[tmp_num.length - 1]);
+      let win_cards = parseCards(group[1].split("|")[0]);
+      let hand_cards = parseCards(group[1].split("|")[1]);
+      let num_win = hand_cards.filter((num) => win_cards.includes(num)).length;
 
-      let win_numbers = parseCards(cards.split("|")[0]);
-      let hand_numbers = parseCards(cards.split("|")[1]);
-
-      let num_win = hand_numbers.filter((num) =>
-        win_numbers.includes(num),
-      ).length;
       if (!card_map[card_number]) {
         card_map[card_number] = 0;
       }

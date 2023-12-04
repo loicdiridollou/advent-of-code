@@ -21,7 +21,7 @@ chosen to learn Typescript.
 | Day 1  |  Trebuchet?!   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day01/) | ⭐️⭐️ |
 | Day 2  | Cube Conundrum | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day02/) | ⭐️⭐️ |
 | Day 3  |  Gear Ratios   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day03/) | ⭐️⭐️ |
-| Day 4  |                |                                                                                 |        |
+| Day 4  |  Scratchcards  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day04/) | ⭐️⭐️ |
 | Day 5  |                |                                                                                 |        |
 | Day 6  |                |                                                                                 |        |
 | Day 7  |                |                                                                                 |        |

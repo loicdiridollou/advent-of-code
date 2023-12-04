@@ -1,11 +1,6 @@
 // Part 2 for day 04 of 2023
 
-function parseCards(cards: string): number[] {
-  return cards
-    .split(" ")
-    .filter((group) => group != "")
-    .map((group): number => parseInt(group));
-}
+import { parseCards } from "./part1";
 
 export function part2(input: string): number {
   let card_map: { [index: number]: number } = {};

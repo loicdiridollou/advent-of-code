@@ -1,5 +1,28 @@
 // Part 2 for day 05 of 2023
 
+var merge = function (I: number[][]) {
+  let R: number[][] = [];
+
+  while (I.length > 0) {
+    R.push(I.pop() as number[]);
+    for (let j: number = R.length - 1; j >= 1; j--) {
+      if (R[j][1] < R[j - 1][0]) {
+        [R[j], R[j - 1]] = [R[j - 1], R[j]];
+        continue;
+      }
+      if (R[j][0] > R[j - 1][1]) {
+        break;
+      }
+      R[j - 1][0] = Math.min(R[j - 1][0], R[j][0]);
+      R[j - 1][1] = Math.max(R[j - 1][1], R[j][1]);
+
+      R.splice(j, 1);
+    }
+  }
+
+  return R;
+};
+
 export function part2(input: string): number {
   let data: string[] = input.split("\n\n").filter((group) => group != "");
 
@@ -50,9 +73,13 @@ export function part2(input: string): number {
       new_seeds.push([seeds[i], seeds[i] + seeds[parseInt(i) + 1] - 1]);
     }
   }
+
+  // merge intervals to reduce compute time
+  new_seeds = merge(new_seeds);
   let location = 1.797693134862315e308;
 
   for (let pair of new_seeds) {
+    console.log(new_seeds.indexOf(pair));
     for (let i = pair[0]; i <= pair[1]; i++) {
       let seed = i;
       for (let map of seeds_to_soil) {

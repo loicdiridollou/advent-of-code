@@ -79,7 +79,6 @@ export function part2(input: string): number {
   let location = 1.797693134862315e308;
 
   for (let pair of new_seeds) {
-    console.log(new_seeds.indexOf(pair));
     for (let i = pair[0]; i <= pair[1]; i++) {
       let seed = i;
       for (let map of seeds_to_soil) {

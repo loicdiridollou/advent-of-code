@@ -16,33 +16,33 @@ chosen to learn Typescript.
 
 ### 2023
 
-|  Day   |     Title      |                                    Directory                                    | Stars  |
-| :----: | :------------: | :-----------------------------------------------------------------------------: | :----: |
-| Day 1  |  Trebuchet?!   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day01/) | ⭐️⭐️ |
-| Day 2  | Cube Conundrum | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day02/) | ⭐️⭐️ |
-| Day 3  |  Gear Ratios   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day03/) | ⭐️⭐️ |
-| Day 4  |  Scratchcards  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day04/) | ⭐️⭐️ |
-| Day 5  |                |                                                                                 |        |
-| Day 6  |                |                                                                                 |        |
-| Day 7  |                |                                                                                 |        |
-| Day 8  |                |                                                                                 |        |
-| Day 9  |                |                                                                                 |        |
-| Day 10 |                |                                                                                 |        |
-| Day 11 |                |                                                                                 |        |
-| Day 12 |                |                                                                                 |        |
-| Day 13 |                |                                                                                 |        |
-| Day 14 |                |                                                                                 |        |
-| Day 15 |                |                                                                                 |        |
-| Day 16 |                |                                                                                 |        |
-| Day 17 |                |                                                                                 |        |
-| Day 18 |                |                                                                                 |        |
-| Day 19 |                |                                                                                 |        |
-| Day 20 |                |                                                                                 |        |
-| Day 21 |                |                                                                                 |        |
-| Day 22 |                |                                                                                 |        |
-| Day 23 |                |                                                                                 |        |
-| Day 24 |                |                                                                                 |        |
-| Day 25 |                |                                                                                 |        |
+|  Day   |              Title              |                                    Directory                                    | Stars  |
+| :----: | :-----------------------------: | :-----------------------------------------------------------------------------: | :----: |
+| Day 1  |           Trebuchet?!           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day01/) | ⭐️⭐️ |
+| Day 2  |         Cube Conundrum          | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day02/) | ⭐️⭐️ |
+| Day 3  |           Gear Ratios           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day03/) | ⭐️⭐️ |
+| Day 4  |          Scratchcards           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day04/) | ⭐️⭐️ |
+| Day 5  | If You Give A Seed A Fertilizer | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day05/) | ⭐️⭐️ |
+| Day 6  |           Wait For It           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day06/) | ⭐️⭐️ |
+| Day 7  |                                 |                                                                                 |        |
+| Day 8  |                                 |                                                                                 |        |
+| Day 9  |                                 |                                                                                 |        |
+| Day 10 |                                 |                                                                                 |        |
+| Day 11 |                                 |                                                                                 |        |
+| Day 12 |                                 |                                                                                 |        |
+| Day 13 |                                 |                                                                                 |        |
+| Day 14 |                                 |                                                                                 |        |
+| Day 15 |                                 |                                                                                 |        |
+| Day 16 |                                 |                                                                                 |        |
+| Day 17 |                                 |                                                                                 |        |
+| Day 18 |                                 |                                                                                 |        |
+| Day 19 |                                 |                                                                                 |        |
+| Day 20 |                                 |                                                                                 |        |
+| Day 21 |                                 |                                                                                 |        |
+| Day 22 |                                 |                                                                                 |        |
+| Day 23 |                                 |                                                                                 |        |
+| Day 24 |                                 |                                                                                 |        |
+| Day 25 |                                 |                                                                                 |        |
 
 ### 2022
 

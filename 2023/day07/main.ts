@@ -1,4 +1,4 @@
-// Main file to run answers for day 06 of 2023
+// Main file to run answers for day 07 of 2023
 
 import fs from "fs";
 import { part1 } from "./part1";

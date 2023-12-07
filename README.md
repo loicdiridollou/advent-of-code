@@ -24,7 +24,7 @@ chosen to learn Typescript.
 | Day 4  |          Scratchcards           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day04/) | ⭐️⭐️ |
 | Day 5  | If You Give A Seed A Fertilizer | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day05/) | ⭐️⭐️ |
 | Day 6  |           Wait For It           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day06/) | ⭐️⭐️ |
-| Day 7  |                                 |                                                                                 |        |
+| Day 7  |           Camel Cards           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day07/) | ⭐️⭐️ |
 | Day 8  |                                 |                                                                                 |        |
 | Day 9  |                                 |                                                                                 |        |
 | Day 10 |                                 |                                                                                 |        |

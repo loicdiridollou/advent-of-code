@@ -1,4 +1,4 @@
-// Part 1 for day 02 of 2023
+// Part 1 for day 05 of 2023
 
 export function part1(input: string): number {
   let data: string[] = input.split("\n\n").filter((group) => group != "");

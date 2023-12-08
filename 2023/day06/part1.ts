@@ -1,4 +1,4 @@
-// Part 1 for day 02 of 2023
+// Part 1 for day 06 of 2023
 
 export function solveTime(time: number, distance: number): number {
   let x1 = (time - Math.sqrt(time * time - 4 * distance)) / 2;

@@ -1,4 +1,4 @@
-// Part 1 for day 01 of 2023
+// Part 1 for day 03 of 2023
 function is_numeric(str: string) {
   return /^\d+$/.test(str);
 }

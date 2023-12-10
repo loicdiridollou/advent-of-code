@@ -1,6 +1,6 @@
 import { part2 } from "./part2";
 
-describe("Testing part 1 with a string", () => {
+describe("Testing part 2 with a string", () => {
   test("Value should be returned for a one-line string", () => {
     expect(
       part2("Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green"),
@@ -8,13 +8,13 @@ describe("Testing part 1 with a string", () => {
   });
 });
 
-describe("Testing part 1 with a string", () => {
+describe("Testing part 2 with a string", () => {
   test("Value should be returned for an empty string", () => {
     expect(part2("")).toBe(0);
   });
 });
 
-describe("Testing part 1 with a multiple-line string", () => {
+describe("Testing part 2 with a multiple-line string", () => {
   test("Value should be returned for a multiple-line string", () => {
     expect(
       part2(`Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green

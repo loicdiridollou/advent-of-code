@@ -1,18 +1,18 @@
 import { part2 } from "./part2";
 
-describe("Testing part 1 with a string", () => {
+describe("Testing part 2 with a string", () => {
   test("Value should be returned for a one-line string", () => {
     expect(part2("Card 1: 41 48 83 86 17 | 83 86  6 31 17  9 48 53")).toBe(5);
   });
 });
 
-describe("Testing part 1 with a string", () => {
+describe("Testing part 2 with a string", () => {
   test("Value should be returned for an empty string", () => {
     expect(part2("")).toBe(0);
   });
 });
 
-describe("Testing part 1 with a multiple-line string", () => {
+describe("Testing part 2 with a multiple-line string", () => {
   test("Value should be returned for a multiple-line string", () => {
     expect(
       part2(`Card 1: 41 48 83 86 17 | 83 86  6 31 17  9 48 53

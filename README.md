@@ -26,7 +26,7 @@ chosen to learn Typescript.
 | Day 6  |           Wait For It           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day06/) | ⭐️⭐️ |
 | Day 7  |           Camel Cards           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day07/) | ⭐️⭐️ |
 | Day 8  |        Haunted Wasteland        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day08/) | ⭐️⭐️ |
-| Day 9  |                                 |                                                                                 |        |
+| Day 9  |       Mirage Maintenance        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day08/) | ⭐️⭐️ |
 | Day 10 |                                 |                                                                                 |        |
 | Day 11 |                                 |                                                                                 |        |
 | Day 12 |                                 |                                                                                 |        |

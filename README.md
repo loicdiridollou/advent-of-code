@@ -28,7 +28,7 @@ chosen to learn Typescript.
 | Day 8  |        Haunted Wasteland        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day08/) | ⭐️⭐️ |
 | Day 9  |       Mirage Maintenance        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day09/) | ⭐️⭐️ |
 | Day 10 |            Pipe Maze            | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day10/) | ⭐️⭐️ |
-| Day 11 |                                 |                                                                                 |        |
+| Day 11 |        Cosmic Expansion         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day11/) | ⭐️⭐️ |
 | Day 12 |                                 |                                                                                 |        |
 | Day 13 |                                 |                                                                                 |        |
 | Day 14 |                                 |                                                                                 |        |

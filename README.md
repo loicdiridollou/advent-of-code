@@ -29,7 +29,7 @@ chosen to learn Typescript.
 | Day 9  |       Mirage Maintenance        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day09/) | ⭐️⭐️ |
 | Day 10 |            Pipe Maze            | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day10/) | ⭐️⭐️ |
 | Day 11 |        Cosmic Expansion         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day11/) | ⭐️⭐️ |
-| Day 12 |                                 |                                                                                 |        |
+| Day 12 |           Hot Springs           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day12/) | ⭐️⭐️ |
 | Day 13 |                                 |                                                                                 |        |
 | Day 14 |                                 |                                                                                 |        |
 | Day 15 |                                 |                                                                                 |        |

@@ -1,7 +1,5 @@
 // Part 2 for day 15 of 2023
 
-import { convertStep } from "./part1";
-
 export function part2(input: string): number {
   let steps = input
     .split(",")
@@ -14,7 +12,9 @@ export function part2(input: string): number {
     let step = steps[i];
 
     let label = step.includes("=") ? step.split("=")[0] : step.split("-")[0];
-    let boxLabel = convertStep(label);
+    let boxLabel = label
+      .split("")
+      .reduce((x, y) => ((x + y.charCodeAt(0)) * 17) % 256, 0);
     let boxType = step.includes("=") ? "add" : "del";
 
     if (boxType == "add") {

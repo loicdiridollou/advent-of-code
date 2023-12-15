@@ -13,17 +13,14 @@ export function convertStep(step: string): number {
 }
 
 export function part1(input: string): number {
-  let steps = input
+  return input
     .split(",")
     .filter((c) => c != "")
-    .map((val) => val.replace(/(\r\n|\n|\r)/gm, ""));
-
-  let total = 0;
-
-  for (let step of steps) {
-    let val = convertStep(step);
-    total += val;
-  }
-
-  return total;
+    .map((val) => val.replace(/(\r\n|\n|\r)/gm, ""))
+    .reduce(
+      (curr, step) =>
+        curr +
+        step.split("").reduce((x, y) => ((x + y.charCodeAt(0)) * 17) % 256, 0),
+      0,
+    );
 }

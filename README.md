@@ -33,7 +33,7 @@ chosen to learn Typescript.
 | Day 13 |       Point of Incidence        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day13/) | ⭐️⭐️ |
 | Day 14 |    Parabolic Reflector Dish     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day14/) | ⭐️⭐️ |
 | Day 15 |          Lens Library           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day15/) | ⭐️⭐️ |
-| Day 16 |                                 |                                                                                 |        |
+| Day 16 |     The Floor Will Be Lava      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day16/) | ⭐️⭐️ |
 | Day 17 |                                 |                                                                                 |        |
 | Day 18 |                                 |                                                                                 |        |
 | Day 19 |                                 |                                                                                 |        |

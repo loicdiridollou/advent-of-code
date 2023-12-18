@@ -52,17 +52,18 @@ export function part1(input: string): number {
   let total = -1;
 
   while (hq.length > 0) {
-    let [hl, r, c, dr, dc, n] = heappop(hq);
+    let curr = heappop(hq);
+    let [hl, r, c, dr, dc, n] = curr;
 
     if (r == grid.length - 1 && c == grid[0].length - 1) {
       total = hl;
       break;
     }
 
-    if (seen.has(`${r}_${c}_${dr}_${dc}_${n}`)) {
+    if (seen.has(curr.slice(1).toString())) {
       continue;
     }
-    seen.add(`${r}_${c}_${dr}_${dc}_${n}`);
+    seen.add(curr.slice(1).toString());
 
     if (n < 3 && !(dr == 0 && dc == 0)) {
       let [nr, nc] = [r + dr, c + dc];

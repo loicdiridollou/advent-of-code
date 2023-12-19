@@ -36,7 +36,7 @@ chosen to learn Typescript.
 | Day 16 |     The Floor Will Be Lava      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day16/) | ⭐️⭐️ |
 | Day 17 |         Clumsy Crucible         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day17/) | ⭐️⭐️ |
 | Day 18 |         Lavaduct Lagoon         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day18/) | ⭐️⭐️ |
-| Day 19 |                                 |                                                                                 |        |
+| Day 19 |             Aplenty             | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day19/) | ⭐️⭐️ |
 | Day 20 |                                 |                                                                                 |        |
 | Day 21 |                                 |                                                                                 |        |
 | Day 22 |                                 |                                                                                 |        |

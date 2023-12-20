@@ -37,7 +37,7 @@ chosen to learn Typescript.
 | Day 17 |         Clumsy Crucible         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day17/) | ⭐️⭐️ |
 | Day 18 |         Lavaduct Lagoon         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day18/) | ⭐️⭐️ |
 | Day 19 |             Aplenty             | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day19/) | ⭐️⭐️ |
-| Day 20 |                                 |                                                                                 |        |
+| Day 20 |        Pulse Propagation        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day20/) | ⭐️⭐️ |
 | Day 21 |                                 |                                                                                 |        |
 | Day 22 |                                 |                                                                                 |        |
 | Day 23 |                                 |                                                                                 |        |

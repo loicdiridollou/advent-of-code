@@ -1,5 +1,7 @@
 // Part 2 for day 20 of 2023
 
+import { Module } from "./part1";
+
 var gcd = function (a: number, b: number) {
   if (!b) {
     return a;
@@ -7,7 +9,6 @@ var gcd = function (a: number, b: number) {
 
   return gcd(b, a % b);
 };
-import { Module } from "./part1";
 
 export function part2(input: string): number {
   let modules: { [index: string]: Module } = {};
@@ -55,10 +56,12 @@ export function part2(input: string): number {
     }
   }
   let presses = 0;
+  let queue: string[][];
+  let module: Module;
 
   while (true) {
     presses += 1;
-    let queue = [];
+    queue = [];
     for (let tgt of broadcastTargets) {
       queue.push(["broadcaster", tgt, "lo"]);
     }
@@ -71,7 +74,7 @@ export function part2(input: string): number {
         continue;
       }
 
-      let module = modules[target];
+      module = modules[target];
 
       if (module.name == feeds[0] && pulse == "hi") {
         seen[origin] += 1;
@@ -108,6 +111,4 @@ export function part2(input: string): number {
       }
     }
   }
-
-  return -1;
 }

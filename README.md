@@ -38,7 +38,7 @@ chosen to learn Typescript.
 | Day 18 |         Lavaduct Lagoon         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day18/) | ⭐️⭐️ |
 | Day 19 |             Aplenty             | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day19/) | ⭐️⭐️ |
 | Day 20 |        Pulse Propagation        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day20/) | ⭐️⭐️ |
-| Day 21 |                                 |                                                                                 |        |
+| Day 21 |          Step Counter           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2123/day21/) | ⭐️⭐️ |
 | Day 22 |                                 |                                                                                 |        |
 | Day 23 |                                 |                                                                                 |        |
 | Day 24 |                                 |                                                                                 |        |

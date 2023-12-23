@@ -40,7 +40,7 @@ chosen to learn Typescript.
 | Day 20 |        Pulse Propagation        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day20/) | ⭐️⭐️ |
 | Day 21 |          Step Counter           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2123/day21/) | ⭐️⭐️ |
 | Day 22 |           Sand Slabs            | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2223/day22/) | ⭐️⭐️ |
-| Day 23 |                                 |                                                                                 |        |
+| Day 23 |           A Long Walk           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2323/day23/) | ⭐️⭐️ |
 | Day 24 |                                 |                                                                                 |        |
 | Day 25 |                                 |                                                                                 |        |
 

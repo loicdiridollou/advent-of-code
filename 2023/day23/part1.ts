@@ -1,11 +1,11 @@
 // Part 1 for day 21 of 2023
 
-let graph: { [index: string]: { [index: string]: number } } = {};
-let start: [number, number] = [-1, -1];
-let end: [number, number] = [-1, -1];
-let seen: Set<string>;
-
-function dfs(pt: [number, number]): number {
+export function dfs(
+  pt: [number, number],
+  graph: { [index: string]: { [index: string]: number } },
+  seen: Set<string>,
+  end: [number, number],
+): number {
   if (pt.toString() == end.toString()) {
     return 0;
   }
@@ -15,7 +15,10 @@ function dfs(pt: [number, number]): number {
   for (let nx in graph[pt.toString()]) {
     if (!seen.has(nx)) {
       let [r, c] = nx.split(",").map((c) => parseInt(c));
-      m = Math.max(m, dfs([r, c]) + graph[pt.toString()][nx.toString()]);
+      m = Math.max(
+        m,
+        dfs([r, c], graph, seen, end) + graph[pt.toString()][nx.toString()],
+      );
     }
   }
   seen.delete(pt.toString());
@@ -28,8 +31,11 @@ export function part1(input: string): number {
     .split("\n")
     .filter((c) => c != "")
     .map((c) => c.split(""));
-  start = [0, grid[0].indexOf(".")];
-  end = [grid.length - 1, grid[grid.length - 1].indexOf(".")];
+  let start: [number, number] = [0, grid[0].indexOf(".")];
+  let end: [number, number] = [
+    grid.length - 1,
+    grid[grid.length - 1].indexOf("."),
+  ];
   let points = [start, end];
 
   for (let r = 0; r < grid.length; r++) {
@@ -65,7 +71,7 @@ export function part1(input: string): number {
     pointsSet.add(point.toString());
   }
 
-  graph = {};
+  let graph: { [index: string]: { [index: string]: number } } = {};
   for (let point of points) {
     graph[point.toString()] = {};
   }
@@ -114,6 +120,6 @@ export function part1(input: string): number {
     }
   }
 
-  seen = new Set<string>();
-  return dfs(start);
+  let seen = new Set<string>();
+  return dfs(start, graph, seen, end);
 }

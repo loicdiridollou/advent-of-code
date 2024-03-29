@@ -1,0 +1,108 @@
+[package]
+name = "advent-of-code"
+version = "1.0.0"
+authors = ["Loic Diridollou"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "day01"
+path = "2020/src/day01/bin/day01.rs"
+
+[[bin]]
+name = "day02"
+path = "2020/src/day02/bin/day02.rs"
+
+[[bin]]
+name = "day03"
+path = "2020/src/day03/bin/day03.rs"
+
+[[bin]]
+name = "day04"
+path = "2020/src/day04/bin/day04.rs"
+
+[[bin]]
+name = "day05"
+path = "2020/src/day05/bin/day05.rs"
+
+[[bin]]
+name = "day06"
+path = "2020/src/day06/bin/day06.rs"
+
+[[bin]]
+name = "day07"
+path = "2020/src/day07/bin/day07.rs"
+
+[[bin]]
+name = "day08"
+path = "2020/src/day08/bin/day08.rs"
+
+[[bin]]
+name = "day09"
+path = "2020/src/day09/bin/day09.rs"
+
+[[bin]]
+name = "day10"
+path = "2020/src/day10/bin/day10.rs"
+
+[[bin]]
+name = "day11"
+path = "2020/src/day11/bin/day11.rs"
+
+[[bin]]
+name = "day12"
+path = "2020/src/day12/bin/day12.rs"
+
+[[bin]]
+name = "day13"
+path = "2020/src/day13/bin/day13.rs"
+
+[[bin]]
+name = "day14"
+path = "2020/src/day14/bin/day14.rs"
+
+[[bin]]
+name = "day15"
+path = "2020/src/day15/bin/day15.rs"
+
+[[bin]]
+name = "day16"
+path = "2020/src/day16/bin/day16.rs"
+
+[[bin]]
+name = "day17"
+path = "2020/src/day17/bin/day17.rs"
+
+[[bin]]
+name = "day18"
+path = "2020/src/day18/bin/day18.rs"
+
+[[bin]]
+name = "day19"
+path = "2020/src/day19/bin/day19.rs"
+
+[[bin]]
+name = "day20"
+path = "2020/src/day20/bin/day20.rs"
+
+[[bin]]
+name = "day21"
+path = "2020/src/day21/bin/day21.rs"
+
+[[bin]]
+name = "day22"
+path = "2020/src/day22/bin/day22.rs"
+
+[[bin]]
+name = "day23"
+path = "2020/src/day23/bin/day23.rs"
+
+[[bin]]
+name = "day24"
+path = "2020/src/day24/bin/day24.rs"
+
+[[bin]]
+name = "day25"
+path = "2020/src/day25/bin/day25.rs"
+
+[dependencies]

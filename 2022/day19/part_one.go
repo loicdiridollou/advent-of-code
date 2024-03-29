@@ -134,7 +134,12 @@ func (s state) copy() state {
 	return s
 }
 
-func (s *state) calcMostGeodes(time int, memo map[string]int, totalTime int, earliestGeode int) int {
+func (s *state) calcMostGeodes(
+	time int,
+	memo map[string]int,
+	totalTime int,
+	earliestGeode int,
+) int {
 	if time == totalTime {
 		return s.geode
 	}

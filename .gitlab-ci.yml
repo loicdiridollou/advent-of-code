@@ -29,6 +29,7 @@ build-typescript:
       - node_modules
   script:
     - yarn
+    - yarn install typescript
     - yarn build
 
 test-typescript:

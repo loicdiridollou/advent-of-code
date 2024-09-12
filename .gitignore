@@ -4,7 +4,7 @@
 2021/day03/part_one_test.go
 dist
 node_modules
-package-lock.json
+**/package-lock.json
 2023/**/*.txt
 venv/
 

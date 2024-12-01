@@ -9,6 +9,10 @@ ci-go:
   stage: ci-go
   script:
     - go test -coverprofile=coverage.out -json ./... | tee test-report.json
+  only:
+    changes:
+      - 2022/
+      - 2024/go
   artifacts:
     when: always
     paths:
@@ -18,7 +22,9 @@ ci-go:
 
 build-typescript:
   image: node:latest
-
+  only:
+    changes:
+      - 2023/
   stage: build-typescript
   artifacts:
     paths:
@@ -34,6 +40,9 @@ build-typescript:
 
 test-typescript:
   image: node:latest
+  only:
+    changes:
+      - 2023/
   stage: test-typescript
   cache:
     key: $CI_COMMIT_REF_NAME
@@ -46,6 +55,9 @@ test-typescript:
 
 ci-rust:
   image: rust:latest
+  only:
+    changes:
+      - 2024/src
   stage: ci-rust
   script:
     - cargo test > report.xml

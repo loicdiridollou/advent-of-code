@@ -10,11 +10,14 @@ pub fn part2(_input: &str) -> usize {
         v1.push(a[0].parse().unwrap());
         v2.push(a[1].parse().unwrap());
     }
+
     let count = v2.iter().collect::<Counter<_>>();
+
     let mut diff = 0;
     for ai in v1.iter() {
         diff += ai * (count[&ai] as i32);
     }
+
     return diff as usize;
 }
 

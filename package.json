@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "./node_modules/jest/bin/jest.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.1",
+    "@types/jest": "^29.5.11",
+    "typescript": "^5.3.2",
+    "jest": "^29.7.0",
+    "mocha": "^10.2.0",
+    "ts-jest": "^29.1.1"
+  },
+  "license": "UNLICENSED"
+}

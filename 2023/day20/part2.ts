@@ -2,7 +2,7 @@
 
 import { Module } from "./part1";
 
-var gcd = function (a: number, b: number) {
+var gcd = function (a: number, b: number): number {
   if (!b) {
     return a;
   }

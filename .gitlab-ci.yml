@@ -11,8 +11,8 @@ ci-go:
     - go test -coverprofile=coverage.out -json ./... | tee test-report.json
   only:
     changes:
-      - 2022/
-      - 2024/go
+      - 2022/**/*
+      - 2024/go/**/*
   artifacts:
     when: always
     paths:
@@ -24,7 +24,7 @@ build-typescript:
   image: node:latest
   only:
     changes:
-      - 2023/
+      - 2023/**/*
   stage: build-typescript
   artifacts:
     paths:
@@ -42,7 +42,7 @@ test-typescript:
   image: node:latest
   only:
     changes:
-      - 2023/
+      - 2023/**/*
   stage: test-typescript
   cache:
     key: $CI_COMMIT_REF_NAME

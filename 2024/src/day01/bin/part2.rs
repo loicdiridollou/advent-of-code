@@ -1,5 +1,7 @@
 //! # Advent of Code - Day 1 - Part Two
 
+use counter::Counter;
+
 pub fn part2(_input: &str) -> usize {
     let mut v1 = Vec::<i32>::new();
     let mut v2 = Vec::<i32>::new();
@@ -8,7 +10,7 @@ pub fn part2(_input: &str) -> usize {
         v1.push(a[0].parse().unwrap());
         v2.push(a[1].parse().unwrap());
     }
-    let count = v2.iter().collect::<counter::Counter<_>>();
+    let count = v2.iter().collect::<Counter<_>>();
     let mut diff = 0;
     for ai in v1.iter() {
         diff += ai * (count[&ai] as i32);

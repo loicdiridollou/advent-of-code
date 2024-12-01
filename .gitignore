@@ -1,10 +1,12 @@
 **/*.input
 **/.DS_Store
-**/bin/*
 2021/day03/part_one_test.go
 dist
 node_modules
 **/package-lock.json
+2021/**/bin
+2022/**/bin
+2024/go/**/bin
 2023/**/*.txt
 2024/**/input.txt
 venv/

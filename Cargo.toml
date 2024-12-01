@@ -1,6 +1,7 @@
 [package]
 name = "advent-of-code"
 version = "1.0.0"
+edition = "2021"
 authors = ["Loic Diridollou"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

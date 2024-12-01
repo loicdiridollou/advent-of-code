@@ -2,6 +2,7 @@ stages:
   - ci-go
   - build-typescript
   - test-typescript
+  - ci-rust
 
 ci-go:
   image: golang:1.20
@@ -45,6 +46,6 @@ test-typescript:
 
 ci-rust:
   image: rust:latest
-  stage: test
+  stage: ci-rust
   script:
     - cargo test > report.xml

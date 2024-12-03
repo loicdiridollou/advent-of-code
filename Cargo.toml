@@ -108,3 +108,4 @@ path = "2024/src/day25/bin/day25.rs"
 
 [dependencies]
 counter = "0.6.0"
+regex = "1.11.1"

@@ -18,7 +18,7 @@ mod day03 {
 
     #[test]
     fn test_part1() {
-        let _input = include_str!("../testinput.txt");
+        let _input = "xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))";
         assert_eq!(part1(_input), 161);
     }
 }

@@ -70,6 +70,7 @@ mod day05 {
 
     #[test]
     fn test_part2() {
-        assert_eq!(part2(""), 0);
+        let _input = include_str!("../testinput.txt");
+        assert_eq!(part2(_input), 123);
     }
 }

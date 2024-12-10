@@ -31,12 +31,12 @@ pub fn part1(_input: &str) -> usize {
             values.swap(l, r);
         }
     }
+
     let mut count = 0;
     for (idx, el) in values.iter().enumerate() {
-        if *el == -1 {
-            continue;
+        if *el != -1 {
+            count += idx as i64 * el;
         }
-        count += idx as i64 * el;
     }
     return count as usize;
 }

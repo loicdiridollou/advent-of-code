@@ -8,6 +8,8 @@ fn try_value(values: Vec<i64>, target: i64) -> bool {
         return true;
     } else if values.len() == 1 {
         return false;
+    } else if values[0] > target {
+        return false;
     }
 
     return try_value(

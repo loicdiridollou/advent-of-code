@@ -28,7 +28,7 @@ chosen to learn Typescript. For 2024, we will do AoC in rust.
 | Day 8  | Resonant Collinearity | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day08/) | ⭐️⭐️ |
 | Day 9  |    Disk Fragmenter    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day09/) | ⭐️⭐️ |
 | Day 10 |        Hoof It        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day10/) | ⭐️⭐️ |
-| Day 11 |                       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day11/) |        |
+| Day 11 |   Plutonian Pebbles   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day11/) | ⭐️⭐️ |
 | Day 12 |                       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day12/) |        |
 | Day 13 |                       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day13/) |        |
 | Day 14 |                       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day14/) |        |

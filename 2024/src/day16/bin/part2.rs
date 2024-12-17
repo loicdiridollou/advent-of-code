@@ -21,7 +21,6 @@ impl Ord for State {
     }
 }
 
-// `PartialOrd` needs to be implemented as well.
 impl PartialOrd for State {
     fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
         Some(self.cmp(other))
@@ -35,21 +34,18 @@ pub fn part2(_input: &str) -> usize {
         .map(|c| c.chars().collect::<Vec<char>>())
         .collect::<Vec<Vec<char>>>();
 
-    let mut mapping = HashMap::new();
     let dir = (0, 1);
     let mut start = (0, 0);
     let mut end = (0, 0);
 
     for r in 0..grid.len() {
         for c in 0..grid[0].len() {
-            let mut chr = grid[r][c];
+            let chr = grid[r][c];
             if chr == 'S' {
                 start = (r, c);
-                chr = '.';
             } else if chr == 'E' {
                 end = (r, c);
             }
-            mapping.insert((r, c), chr);
         }
     }
     let mut visited = HashSet::new();
@@ -106,7 +102,7 @@ pub fn part2(_input: &str) -> usize {
                 direction: potential.direction,
             };
 
-            if *mapping.get(&potential.position).unwrap() == '#' {
+            if grid[position.0][position.1] == '#' {
                 continue;
             }
             let lowest = *lowest_cost

@@ -33,7 +33,7 @@ chosen to learn Typescript. For 2024, we will do AoC in rust.
 | Day 13 |   Claw Contraption    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day13/) | ⭐️⭐️ |
 | Day 14 |   Restroom Redoubt    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day14/) | ⭐️⭐️ |
 | Day 15 |    Warehouse Woes     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day15/) | ⭐️⭐️ |
-| Day 16 |                       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day16/) |        |
+| Day 16 |     Reindeer Maze     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day16/) | ⭐️⭐️ |
 | Day 17 |                       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day17/) |        |
 | Day 18 |                       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day18/) |        |
 | Day 19 |                       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day19/) |        |

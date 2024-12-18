@@ -1,6 +1,6 @@
 //! # Advent of Code - Day 18 - Part Two
 
-pub fn part2() -> usize {
+pub fn part2(_input: &str) -> usize {
     return 0;
 }
 
@@ -10,6 +10,6 @@ mod day18 {
 
     #[test]
     fn test_part2() {
-        assert_eq!(part2(), 0);
+        assert_eq!(part2(""), 0);
     }
 }

@@ -7,9 +7,8 @@ node_modules
 2021/**/bin
 2022/**/bin
 2024/go/**/bin
-2023/**/*.txt
-2024/**/input.txt
-2024/src/**/input.txt
+/2023/**/*.txt
+/2024/**/input.txt
 venv/
 
 # rust

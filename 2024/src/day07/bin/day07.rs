@@ -1,12 +1,12 @@
-//! # Advent of Code - Day 6
+//! # Advent of Code - Day 7
 
-use std::time::Instant;
+use std::{fs::read_to_string, time::Instant};
 
 mod part1;
 mod part2;
 
 fn main() {
-    let _input = include_str!("../input.txt");
+    let _input = read_to_string("../input.txt").unwrap();
 
     // start timer
     let start = Instant::now();

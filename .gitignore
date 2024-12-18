@@ -9,6 +9,7 @@ node_modules
 2024/go/**/bin
 2023/**/*.txt
 2024/**/input.txt
+2024/src/**/input.txt
 venv/
 
 # rust

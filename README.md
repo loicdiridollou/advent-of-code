@@ -36,7 +36,7 @@ chosen to learn Typescript. For 2024, we will do AoC in rust.
 | Day 16 |     Reindeer Maze      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day16/) | ⭐️⭐️ |
 | Day 17 | Chronospatial Computer | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day17/) | ⭐️⭐️ |
 | Day 18 |        RAM Run         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day18/) | ⭐️⭐️ |
-| Day 19 |                        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day19/) |        |
+| Day 19 |      Linen Layout      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day19/) | ⭐️⭐️ |
 | Day 20 |                        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day20/) |        |
 | Day 21 |                        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day21/) |        |
 | Day 22 |                        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day22/) |        |

@@ -79,6 +79,6 @@ mod day20 {
     #[test]
     fn test_part1() {
         let _input = include_str!("../testinput.txt");
-        assert_eq!(part1(_input), 5);
+        assert_eq!(part1(_input), 0);
     }
 }

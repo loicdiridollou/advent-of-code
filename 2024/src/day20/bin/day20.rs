@@ -20,7 +20,7 @@ fn main() {
     // reset timer
     let start = Instant::now();
 
-    println!("Part 2: {}", part2::part2(&_input));
+    println!("Part 2: {}", part2::part2(&_input, 20, 100));
 
     // print time taken by part2
     println!("Time taken by Part 2: {:?}", start.elapsed());

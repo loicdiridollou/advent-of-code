@@ -4,15 +4,15 @@ pub fn part1(_input: &str) -> usize {
     let mut v1 = vec![];
     let mut v2 = vec![];
 
-    for line in _input.lines() {
+    _input.lines().for_each(|line| {
         let mut a = line.split_whitespace();
         v1.push(a.next().unwrap().parse::<i32>().unwrap());
         v2.push(a.next().unwrap().parse::<i32>().unwrap());
-    }
+    });
     v1.sort();
     v2.sort();
 
-    let result: i32 = std::iter::zip(v1, v2).map(|(l, r)| (l - r).abs()).sum();
+    let result: i32 = v1.iter().zip(v2).map(|(l, r)| (l - r).abs()).sum();
 
     return result as usize;
 }

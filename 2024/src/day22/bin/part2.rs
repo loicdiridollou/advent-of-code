@@ -14,13 +14,14 @@ pub fn part2(_input: &str) -> usize {
     let mut seq_total = HashMap::new();
     for mut secret_num in secret_numbers {
         let mut buyer = vec![secret_num % 10];
+        let mut seen = HashSet::new();
         for _ in 0..2000 {
             secret_num = generate_next(secret_num);
             buyer.push(secret_num % 10);
-        }
-        let mut seen = HashSet::new();
-        for i in 0..(buyer.len() - 4) {
-            let diff = buyer[i..(i + 5)]
+            if buyer.len() < 5 {
+                continue;
+            }
+            let diff = buyer[(buyer.len() - 5)..]
                 .windows(2)
                 .map(|window| window[1] - window[0])
                 .collect::<Vec<i64>>();
@@ -29,7 +30,7 @@ pub fn part2(_input: &str) -> usize {
                 continue;
             }
             seen.insert(diff_tup);
-            *seq_total.entry(diff_tup).or_insert(0) += buyer[i + 4];
+            *seq_total.entry(diff_tup).or_insert(0) += buyer[buyer.len() - 1];
         }
     }
 

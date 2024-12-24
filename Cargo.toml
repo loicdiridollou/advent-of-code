@@ -109,4 +109,6 @@ path = "2024/src/day25/bin/day25.rs"
 [dependencies]
 cached = "0.54.0"
 counter = "0.6.0"
+itertools = "0.13.0"
+petgraph = "0.6.5"
 regex = "1.11.1"

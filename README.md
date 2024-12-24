@@ -40,7 +40,7 @@ chosen to learn Typescript. For 2024, we will do AoC in rust.
 | Day 20 |     Race Condition     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day20/) | ⭐️⭐️ |
 | Day 21 |    Keypad Conundrum    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day21/) |        |
 | Day 22 |     Monkey Market      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day22/) | ⭐️⭐️ |
-| Day 23 |                        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day23/) |        |
+| Day 23 |       LAN Party        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day23/) | ⭐️⭐️ |
 | Day 24 |                        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day24/) |        |
 | Day 25 |                        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day25/) |        |
 

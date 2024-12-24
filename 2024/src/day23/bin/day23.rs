@@ -6,7 +6,7 @@ mod part1;
 mod part2;
 
 fn main() {
-    let _input = read_to_string("./day23/testinput.txt").unwrap();
+    let _input = read_to_string("./day23/input.txt").unwrap();
 
     // start timer
     let start = Instant::now();
@@ -20,7 +20,7 @@ fn main() {
     // reset timer
     let start = Instant::now();
 
-    println!("Part 2: {}", part2::part2(&_input));
+    println!("Part 2: {}", part2::part2(&_input, 12));
 
     // print time taken by part2
     println!("Time taken by Part 2: {:?}", start.elapsed());

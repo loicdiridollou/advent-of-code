@@ -6,7 +6,7 @@ mod part1;
 mod part2;
 
 fn main() {
-    let _input = read_to_string("../input.txt").unwrap();
+    let _input = read_to_string("./day24/input.txt").unwrap();
 
     // start timer
     let start = Instant::now();

@@ -1,6 +1,6 @@
 //! # Advent of Code - Day 25 - Part One
 
-use itertools::iproduct;
+use itertools::Itertools;
 
 pub fn part1(_input: &str) -> usize {
     let entries = _input.split("\n\n").collect::<Vec<&str>>();
@@ -14,7 +14,7 @@ pub fn part1(_input: &str) -> usize {
             .map(|c| c.chars().collect::<Vec<char>>())
             .collect::<Vec<Vec<char>>>();
         let mut res = vec![];
-        if grid[0].iter().map(|c| *c == '#').all(|x| x) {
+        if grid[0].iter().all(|c| *c == '#') {
             while res.len() < grid[0].len() {
                 for i in 1..=grid.len() {
                     if grid[grid.len() - i][res.len()] == '#' {
@@ -37,14 +37,11 @@ pub fn part1(_input: &str) -> usize {
         }
     }
 
-    let count = iproduct!(keys, locks)
+    let count = keys
+        .iter()
+        .cartesian_product(locks.iter())
         .map(|(key, lock)| {
-            if lock
-                .iter()
-                .zip(key.iter())
-                .map(|(x, y)| x + y <= 5)
-                .all(|x| x)
-            {
+            if lock.iter().zip(key.iter()).all(|(x, y)| x + y <= 5) {
                 return 1;
             } else {
                 return 0;

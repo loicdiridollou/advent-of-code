@@ -3,7 +3,6 @@
 use std::i64;
 
 fn try_value(values: Vec<i64>, target: i64) -> bool {
-    // println!("{} {:?}", target, values);
     if values.len() == 1 && target == values[0] {
         return true;
     } else if values.len() == 1 {

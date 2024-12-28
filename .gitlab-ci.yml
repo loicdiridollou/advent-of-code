@@ -5,7 +5,7 @@ stages:
   - ci-rust
 
 ci-go:
-  image: golang:1.20
+  image: golang:1.23
   stage: ci-go
   script:
     - go test -coverprofile=coverage.out -json ./... | tee test-report.json

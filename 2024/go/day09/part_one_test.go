@@ -9,9 +9,9 @@ func Test_part1(t *testing.T) {
 	var dat []byte
 	dat, _ = os.ReadFile("./testinput.txt")
 	actual := part1(string(dat))
-	expected := 1928
+	exp := 1928
 
-	if actual != expected {
+	if actual != exp {
 		t.Fatal("Error")
 	}
 }

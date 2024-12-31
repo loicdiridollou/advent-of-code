@@ -10,8 +10,7 @@ fn is_doable(towel: String, patterns_str: String, max_size: usize) -> bool {
         return true;
     }
     let mut patterns = HashSet::new();
-    let patternss = patterns_str.clone();
-    patternss.split(", ").for_each(|c| {
+    patterns_str.split(", ").for_each(|c| {
         patterns.insert(c);
     });
 
@@ -46,12 +45,17 @@ pub fn part1(_input: &str) -> usize {
         .filter(|c| !c.is_empty())
         .collect::<Vec<&str>>();
 
-    let mut count = 0;
-    for towel in towels {
-        if is_doable(towel.to_string(), input[0].to_string(), max_size) {
-            count += 1;
-        }
-    }
+    let count = towels
+        .iter()
+        .map(|towel| {
+            if is_doable(towel.to_string(), input[0].to_string(), max_size) {
+                return 1;
+            } else {
+                return 0;
+            }
+        })
+        .sum();
+
     return count;
 }
 

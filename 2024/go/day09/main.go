@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Day 1")
+	fmt.Println("Day 09")
 	var dat []byte
 	dat, _ = os.ReadFile("./input.txt")
 	start := time.Now()

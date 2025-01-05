@@ -5,6 +5,9 @@ stages:
   - ci-rust
 
 ci-go:
+  variables:
+    RUNNER_SCRIPT_TIMEOUT: 15m
+    RUNNER_AFTER_SCRIPT_TIMEOUT: 10m
   image: golang:latest
   stage: ci-go
   script:

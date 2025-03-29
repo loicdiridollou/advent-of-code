@@ -34,7 +34,12 @@ func hashVal(x, y, z int) string {
 	return fmt.Sprint(x) + "_" + fmt.Sprint(y) + "_" + fmt.Sprint(z)
 }
 
-func DFS(point Point, points []Point, points_map map[string]Point, visited map[string]bool) (int, map[string]bool) {
+func DFS(
+	point Point,
+	points []Point,
+	points_map map[string]Point,
+	visited map[string]bool,
+) (int, map[string]bool) {
 	faces := 0
 	x, y, z := point.x, point.y, point.z
 	act := hashVal(x, y, z)

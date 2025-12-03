@@ -1,0 +1,19 @@
+[package]
+name = "day02"
+version = "1.0.0"
+edition = "2024"
+authors = ["Loic Diridollou"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "day02"
+path = "bin/day02.rs"
+
+
+[dependencies]
+cached = "0.54.0"
+counter = "0.6.0"
+itertools = "0.13.0"
+petgraph = "0.6.5"
+regex = "1.11.1"

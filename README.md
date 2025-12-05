@@ -14,121 +14,151 @@ chosen to learn Typescript. For 2024, we will do AoC in rust.
 
 ## Table of Contents
 
+### 2025
+
+|  Day   |        Title        |                                    Directory                                    | Stars |
+| :----: | :-----------------: | :-----------------------------------------------------------------------------: | :---: |
+| Day 1  |   Secret Entrance   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day01/) | ⭐️⭐️  |
+| Day 2  |      Gift Shop      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day02/) | ⭐️⭐️  |
+| Day 3  |        Lobby        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day03/) | ⭐️⭐️  |
+| Day 4  | Printing Department | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day04/) | ⭐️⭐️  |
+| Day 5  |      Cafeteria      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day05/) | ⭐️⭐️  |
+| Day 6  |                     |                                                                                 |       |
+| Day 7  |                     |                                                                                 |       |
+| Day 8  |                     |                                                                                 |       |
+| Day 9  |                     |                                                                                 |       |
+| Day 10 |                     |                                                                                 |       |
+| Day 11 |                     |                                                                                 |       |
+| Day 12 |                     |                                                                                 |       |
+| Day 13 |                     |                                                                                 |       |
+| Day 14 |                     |                                                                                 |       |
+| Day 15 |                     |                                                                                 |       |
+| Day 16 |                     |                                                                                 |       |
+| Day 17 |                     |                                                                                 |       |
+| Day 18 |                     |                                                                                 |       |
+| Day 19 |                     |                                                                                 |       |
+| Day 20 |                     |                                                                                 |       |
+| Day 21 |                     |                                                                                 |       |
+| Day 22 |                     |                                                                                 |       |
+| Day 23 |                     |                                                                                 |       |
+| Day 24 |                     |                                                                                 |       |
+| Day 25 |                     |                                                                                 |       |
+
+### 2024
+
+|  Day   |         Title          |                                      Directory                                      | Stars |
+| :----: | :--------------------: | :---------------------------------------------------------------------------------: | :---: |
+| Day 1  |   Historian Hysteria   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day01/) | ⭐️⭐️  |
+| Day 2  |   Red-Nosed Reports    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day02/) | ⭐️⭐️  |
+| Day 3  |      Mull It Over      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day03/) | ⭐️⭐️  |
+| Day 4  |      Ceres Search      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day04/) | ⭐️⭐️  |
+| Day 5  |      Print Queue       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day05/) | ⭐️⭐️  |
+| Day 6  |    Guard Gallivant     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day06/) | ⭐️⭐️  |
+| Day 7  |     Bridge Repair      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day07/) | ⭐️⭐️  |
+| Day 8  | Resonant Collinearity  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day08/) | ⭐️⭐️  |
+| Day 9  |    Disk Fragmenter     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day09/) | ⭐️⭐️  |
+| Day 10 |        Hoof It         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day10/) | ⭐️⭐️  |
+| Day 11 |   Plutonian Pebbles    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day11/) | ⭐️⭐️  |
+| Day 12 |     Garden Groups      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day12/) | ⭐️⭐️  |
+| Day 13 |    Claw Contraption    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day13/) | ⭐️⭐️  |
+| Day 14 |    Restroom Redoubt    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day14/) | ⭐️⭐️  |
+| Day 15 |     Warehouse Woes     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day15/) | ⭐️⭐️  |
+| Day 16 |     Reindeer Maze      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day16/) | ⭐️⭐️  |
+| Day 17 | Chronospatial Computer | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day17/) | ⭐️⭐️  |
+| Day 18 |        RAM Run         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day18/) | ⭐️⭐️  |
+| Day 19 |      Linen Layout      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day19/) | ⭐️⭐️  |
+| Day 20 |     Race Condition     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day20/) | ⭐️⭐️  |
+| Day 21 |    Keypad Conundrum    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day21/) | ⭐️⭐️  |
+| Day 22 |     Monkey Market      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day22/) | ⭐️⭐️  |
+| Day 23 |       LAN Party        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day23/) | ⭐️⭐️  |
+| Day 24 |     Crossed Wires      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day24/) | ⭐️⭐️  |
+| Day 25 |     Code Chronicle     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day25/) | ⭐️⭐️  |
+
 ### 2023
 
-|  Day   |         Title          |                                      Directory                                      | Stars  |
-| :----: | :--------------------: | :---------------------------------------------------------------------------------: | :----: |
-| Day 1  |   Historian Hysteria   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day01/) | ⭐️⭐️ |
-| Day 2  |   Red-Nosed Reports    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day02/) | ⭐️⭐️ |
-| Day 3  |      Mull It Over      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day03/) | ⭐️⭐️ |
-| Day 4  |      Ceres Search      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day04/) | ⭐️⭐️ |
-| Day 5  |      Print Queue       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day05/) | ⭐️⭐️ |
-| Day 6  |    Guard Gallivant     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day06/) | ⭐️⭐️ |
-| Day 7  |     Bridge Repair      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day07/) | ⭐️⭐️ |
-| Day 8  | Resonant Collinearity  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day08/) | ⭐️⭐️ |
-| Day 9  |    Disk Fragmenter     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day09/) | ⭐️⭐️ |
-| Day 10 |        Hoof It         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day10/) | ⭐️⭐️ |
-| Day 11 |   Plutonian Pebbles    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day11/) | ⭐️⭐️ |
-| Day 12 |     Garden Groups      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day12/) | ⭐️⭐️ |
-| Day 13 |    Claw Contraption    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day13/) | ⭐️⭐️ |
-| Day 14 |    Restroom Redoubt    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day14/) | ⭐️⭐️ |
-| Day 15 |     Warehouse Woes     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day15/) | ⭐️⭐️ |
-| Day 16 |     Reindeer Maze      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day16/) | ⭐️⭐️ |
-| Day 17 | Chronospatial Computer | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day17/) | ⭐️⭐️ |
-| Day 18 |        RAM Run         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day18/) | ⭐️⭐️ |
-| Day 19 |      Linen Layout      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day19/) | ⭐️⭐️ |
-| Day 20 |     Race Condition     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day20/) | ⭐️⭐️ |
-| Day 21 |    Keypad Conundrum    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day21/) |        |
-| Day 22 |     Monkey Market      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day22/) | ⭐️⭐️ |
-| Day 23 |       LAN Party        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day23/) | ⭐️⭐️ |
-| Day 24 |     Crossed Wires      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day24/) | ⭐️⭐️ |
-| Day 25 |     Code Chronicle     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2024/src/day25/) | ⭐️⭐️ |
-
-### 2023
-
-|  Day   |              Title              |                                    Directory                                    | Stars  |
-| :----: | :-----------------------------: | :-----------------------------------------------------------------------------: | :----: |
-| Day 1  |           Trebuchet?!           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day01/) | ⭐️⭐️ |
-| Day 2  |         Cube Conundrum          | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day02/) | ⭐️⭐️ |
-| Day 3  |           Gear Ratios           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day03/) | ⭐️⭐️ |
-| Day 4  |          Scratchcards           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day04/) | ⭐️⭐️ |
-| Day 5  | If You Give A Seed A Fertilizer | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day05/) | ⭐️⭐️ |
-| Day 6  |           Wait For It           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day06/) | ⭐️⭐️ |
-| Day 7  |           Camel Cards           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day07/) | ⭐️⭐️ |
-| Day 8  |        Haunted Wasteland        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day08/) | ⭐️⭐️ |
-| Day 9  |       Mirage Maintenance        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day09/) | ⭐️⭐️ |
-| Day 10 |            Pipe Maze            | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day10/) | ⭐️⭐️ |
-| Day 11 |        Cosmic Expansion         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day11/) | ⭐️⭐️ |
-| Day 12 |           Hot Springs           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day12/) | ⭐️⭐️ |
-| Day 13 |       Point of Incidence        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day13/) | ⭐️⭐️ |
-| Day 14 |    Parabolic Reflector Dish     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day14/) | ⭐️⭐️ |
-| Day 15 |          Lens Library           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day15/) | ⭐️⭐️ |
-| Day 16 |     The Floor Will Be Lava      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day16/) | ⭐️⭐️ |
-| Day 17 |         Clumsy Crucible         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day17/) | ⭐️⭐️ |
-| Day 18 |         Lavaduct Lagoon         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day18/) | ⭐️⭐️ |
-| Day 19 |             Aplenty             | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day19/) | ⭐️⭐️ |
-| Day 20 |        Pulse Propagation        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day20/) | ⭐️⭐️ |
-| Day 21 |          Step Counter           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day21/) | ⭐️⭐️ |
-| Day 22 |           Sand Slabs            | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day22/) | ⭐️⭐️ |
-| Day 23 |           A Long Walk           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day23/) | ⭐️⭐️ |
-| Day 24 |     Never Tell Me The Odds      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day24/) | ⭐️⭐️ |
-| Day 25 |           Snowverload           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day25/) | ⭐️⭐️ |
+|  Day   |              Title              |                                    Directory                                    | Stars |
+| :----: | :-----------------------------: | :-----------------------------------------------------------------------------: | :---: |
+| Day 1  |           Trebuchet?!           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day01/) | ⭐️⭐️  |
+| Day 2  |         Cube Conundrum          | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day02/) | ⭐️⭐️  |
+| Day 3  |           Gear Ratios           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day03/) | ⭐️⭐️  |
+| Day 4  |          Scratchcards           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day04/) | ⭐️⭐️  |
+| Day 5  | If You Give A Seed A Fertilizer | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day05/) | ⭐️⭐️  |
+| Day 6  |           Wait For It           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day06/) | ⭐️⭐️  |
+| Day 7  |           Camel Cards           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day07/) | ⭐️⭐️  |
+| Day 8  |        Haunted Wasteland        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day08/) | ⭐️⭐️  |
+| Day 9  |       Mirage Maintenance        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day09/) | ⭐️⭐️  |
+| Day 10 |            Pipe Maze            | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day10/) | ⭐️⭐️  |
+| Day 11 |        Cosmic Expansion         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day11/) | ⭐️⭐️  |
+| Day 12 |           Hot Springs           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day12/) | ⭐️⭐️  |
+| Day 13 |       Point of Incidence        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day13/) | ⭐️⭐️  |
+| Day 14 |    Parabolic Reflector Dish     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day14/) | ⭐️⭐️  |
+| Day 15 |          Lens Library           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day15/) | ⭐️⭐️  |
+| Day 16 |     The Floor Will Be Lava      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day16/) | ⭐️⭐️  |
+| Day 17 |         Clumsy Crucible         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day17/) | ⭐️⭐️  |
+| Day 18 |         Lavaduct Lagoon         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day18/) | ⭐️⭐️  |
+| Day 19 |             Aplenty             | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day19/) | ⭐️⭐️  |
+| Day 20 |        Pulse Propagation        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day20/) | ⭐️⭐️  |
+| Day 21 |          Step Counter           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day21/) | ⭐️⭐️  |
+| Day 22 |           Sand Slabs            | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day22/) | ⭐️⭐️  |
+| Day 23 |           A Long Walk           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day23/) | ⭐️⭐️  |
+| Day 24 |     Never Tell Me The Odds      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day24/) | ⭐️⭐️  |
+| Day 25 |           Snowverload           | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2023/day25/) | ⭐️⭐️  |
 
 ### 2022
 
-|  Day   |          Title           |                                    Directory                                    | Stars  |
-| :----: | :----------------------: | :-----------------------------------------------------------------------------: | :----: |
-| Day 1  |     Calorie Counting     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day01/) | ⭐️⭐️ |
-| Day 2  |   Rock Paper Scissors    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day02/) | ⭐️⭐️ |
-| Day 3  |  Rucksack Organization   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day03/) | ⭐️⭐️ |
-| Day 4  |       Camp Cleanup       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day04/) | ⭐️⭐️ |
-| Day 5  |       Supply Stack       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day05/) | ⭐️⭐️ |
-| Day 6  |      Tuning Trouble      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day06/) | ⭐️⭐️ |
-| Day 7  | No Space Left On Device  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day07/) | ⭐️⭐️ |
-| Day 8  |    Treetop Tree House    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day08/) | ⭐️⭐️ |
-| Day 9  |       Rope Bridge        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day09/) | ⭐️⭐️ |
-| Day 10 |     Cathode-Ray Tube     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day10/) | ⭐️⭐️ |
-| Day 11 |   Monkey in the Middle   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day11/) | ⭐️⭐️ |
-| Day 12 | Hill Climbing Algorithm  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day12/) | ⭐️⭐️ |
-| Day 13 |     Distress Signal      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day13/) | ⭐️⭐️ |
-| Day 14 |    Regolith Reservoir    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day14/) | ⭐️⭐️ |
-| Day 15 |  Beacon Exclusion Zone   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day15/) | ⭐️⭐️ |
-| Day 16 |  Proboscidea Volcanium   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day16/) | ⭐️⭐️ |
-| Day 17 |     Pyroclastic Flow     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day17/) | ⭐️⭐️ |
-| Day 18 |     Boiling Boulders     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day18/) | ⭐️⭐️ |
-| Day 19 |   Not Enough Minerals    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day19/) | ⭐️⭐️ |
-| Day 20 | Grove Positioning System | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day20/) | ⭐️⭐️ |
-| Day 21 |       Monkey Math        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day21/) | ⭐️⭐️ |
-| Day 22 |        Monkey Map        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day22/) | ⭐️⭐️ |
-| Day 23 |    Unstable Diffusion    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day23/) | ⭐️⭐️ |
-| Day 24 |      Blizzard Basin      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day24/) | ⭐️⭐️ |
-| Day 25 |     Full of Hot Air      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day25/) | ⭐️⭐️ |
+|  Day   |          Title           |                                    Directory                                    | Stars |
+| :----: | :----------------------: | :-----------------------------------------------------------------------------: | :---: |
+| Day 1  |     Calorie Counting     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day01/) | ⭐️⭐️  |
+| Day 2  |   Rock Paper Scissors    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day02/) | ⭐️⭐️  |
+| Day 3  |  Rucksack Organization   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day03/) | ⭐️⭐️  |
+| Day 4  |       Camp Cleanup       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day04/) | ⭐️⭐️  |
+| Day 5  |       Supply Stack       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day05/) | ⭐️⭐️  |
+| Day 6  |      Tuning Trouble      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day06/) | ⭐️⭐️  |
+| Day 7  | No Space Left On Device  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day07/) | ⭐️⭐️  |
+| Day 8  |    Treetop Tree House    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day08/) | ⭐️⭐️  |
+| Day 9  |       Rope Bridge        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day09/) | ⭐️⭐️  |
+| Day 10 |     Cathode-Ray Tube     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day10/) | ⭐️⭐️  |
+| Day 11 |   Monkey in the Middle   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day11/) | ⭐️⭐️  |
+| Day 12 | Hill Climbing Algorithm  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day12/) | ⭐️⭐️  |
+| Day 13 |     Distress Signal      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day13/) | ⭐️⭐️  |
+| Day 14 |    Regolith Reservoir    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day14/) | ⭐️⭐️  |
+| Day 15 |  Beacon Exclusion Zone   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day15/) | ⭐️⭐️  |
+| Day 16 |  Proboscidea Volcanium   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day16/) | ⭐️⭐️  |
+| Day 17 |     Pyroclastic Flow     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day17/) | ⭐️⭐️  |
+| Day 18 |     Boiling Boulders     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day18/) | ⭐️⭐️  |
+| Day 19 |   Not Enough Minerals    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day19/) | ⭐️⭐️  |
+| Day 20 | Grove Positioning System | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day20/) | ⭐️⭐️  |
+| Day 21 |       Monkey Math        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day21/) | ⭐️⭐️  |
+| Day 22 |        Monkey Map        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day22/) | ⭐️⭐️  |
+| Day 23 |    Unstable Diffusion    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day23/) | ⭐️⭐️  |
+| Day 24 |      Blizzard Basin      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day24/) | ⭐️⭐️  |
+| Day 25 |     Full of Hot Air      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2022/day25/) | ⭐️⭐️  |
 
 ### 2021
 
-|  Day   |          Title          |                                    Directory                                    | Stars  |
-| :----: | :---------------------: | :-----------------------------------------------------------------------------: | :----: |
-| Day 1  |       Sonar Sweep       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day01/) | ⭐️⭐️ |
-| Day 3  |         Dive !          | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day03/) | ⭐️⭐️ |
-| Day 4  |    Binary Diagnostic    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day04/) | ⭐️⭐️ |
-| Day 5  |      Griant Squid       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day05/) | ⭐️⭐️ |
-| Day 6  |  Hydrothermal Venture   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day06/) | ⭐️⭐️ |
-| Day 7  |       Lanternfish       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day07/) | ⭐️⭐️ |
-| Day 8  |  Seven Segment Search   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day08/) |        |
-| Day 9  |       Smoke Basin       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day09/) | ⭐️⭐️ |
-| Day 10 |     Syntax Scoring      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day10/) | ⭐️⭐️ |
-| Day 11 |      Dumbo Octopus      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day11/) | ⭐️⭐️ |
-| Day 12 |     Passage Pathing     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day12/) | ⭐️⭐️ |
-| Day 13 |   Transparent Origami   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day13/) | ⭐️⭐️ |
-| Day 14 | Extended Polymerization | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day14/) | ⭐️⭐️ |
-| Day 15 |         Chiton          | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day15/) | ⭐️⭐️ |
-| Day 16 |     Packet Decoder      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day16/) |        |
-| Day 17 |       Trick Shot        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day17/) |        |
-| Day 18 |        Snailfish        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day18/) |        |
-| Day 19 |     Beacon Scanner      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day19/) |        |
-| Day 20 |       Trench Map        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day20/) |        |
-| Day 21 |       Dirac Dice        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day21/) |        |
-| Day 22 |     Reactor Reboot      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day22/) |        |
-| Day 23 |        Amphipod         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day23/) |        |
-| Day 24 |  Arithmetic Logic Unit  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day24/) |        |
-| Day 25 |      Sea Cucumber       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day25/) |        |
+|  Day   |          Title          |                                    Directory                                    | Stars |
+| :----: | :---------------------: | :-----------------------------------------------------------------------------: | :---: |
+| Day 1  |       Sonar Sweep       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day01/) | ⭐️⭐️  |
+| Day 3  |         Dive !          | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day03/) | ⭐️⭐️  |
+| Day 4  |    Binary Diagnostic    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day04/) | ⭐️⭐️  |
+| Day 5  |      Griant Squid       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day05/) | ⭐️⭐️  |
+| Day 6  |  Hydrothermal Venture   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day06/) | ⭐️⭐️  |
+| Day 7  |       Lanternfish       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day07/) | ⭐️⭐️  |
+| Day 8  |  Seven Segment Search   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day08/) |       |
+| Day 9  |       Smoke Basin       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day09/) | ⭐️⭐️  |
+| Day 10 |     Syntax Scoring      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day10/) | ⭐️⭐️  |
+| Day 11 |      Dumbo Octopus      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day11/) | ⭐️⭐️  |
+| Day 12 |     Passage Pathing     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day12/) | ⭐️⭐️  |
+| Day 13 |   Transparent Origami   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day13/) | ⭐️⭐️  |
+| Day 14 | Extended Polymerization | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day14/) | ⭐️⭐️  |
+| Day 15 |         Chiton          | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day15/) | ⭐️⭐️  |
+| Day 16 |     Packet Decoder      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day16/) |       |
+| Day 17 |       Trick Shot        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day17/) |       |
+| Day 18 |        Snailfish        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day18/) |       |
+| Day 19 |     Beacon Scanner      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day19/) |       |
+| Day 20 |       Trench Map        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day20/) |       |
+| Day 21 |       Dirac Dice        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day21/) |       |
+| Day 22 |     Reactor Reboot      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day22/) |       |
+| Day 23 |        Amphipod         | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day23/) |       |
+| Day 24 |  Arithmetic Logic Unit  | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day24/) |       |
+| Day 25 |      Sea Cucumber       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2021/day25/) |       |

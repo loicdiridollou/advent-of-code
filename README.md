@@ -10,7 +10,7 @@ This repository compiles all the solutions for the daily problems of the
 I am using this opportunity to work on my Go skills as I don't usually write Go
 for work. I get to learn more on the structure, performance and speeding up
 abilities of Go compared to other languages I write code in. For 2023 I have
-chosen to learn Typescript. For 2024, we will do AoC in rust.
+chosen to learn Typescript. For 2024 and 2025, we will do AoC in rust.
 
 ## Table of Contents
 

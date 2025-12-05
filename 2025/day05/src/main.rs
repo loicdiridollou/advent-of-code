@@ -1,4 +1,4 @@
-// Advent of Code 2025 - Day 4
+// Advent of Code 2025 - Day 5
 
 use std::{fs::read_to_string, time::Instant};
 

@@ -1,0 +1,11 @@
+[package]
+name = "day04"
+version = "1.0.0"
+edition = "2024"
+authors = ["Loic Diridollou"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "day04"
+path = "bin/day04.rs"

@@ -13,8 +13,8 @@ pub fn part2(_input: &str) -> usize {
         let c = v1[0].len() - cc - 1;
         let opr = v1[ln - 1][c];
         let mut v3: Vec<u64> = vec![];
-        for r in 0..v1.len() - 1 {
-            let chr = v1[r][c];
+        for item in v1.iter().take(v1.len() - 1) {
+            let chr = item[c];
             if chr != ' ' {
                 v3.push(chr.to_digit(10).unwrap() as u64);
             }

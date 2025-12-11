@@ -1,0 +1,8 @@
+[package]
+name = "day04"
+version = "1.0.0"
+edition = "2024"
+authors = ["Loic Diridollou"]
+
+[dependencies]
+pathfinding = "4.14.0"

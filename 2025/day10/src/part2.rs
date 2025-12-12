@@ -1,4 +1,4 @@
-// Advent of Code 2025 - Day 010 - Part Two
+// Advent of Code 2025 - Day 10 - Part Two
 
 use std::collections::HashSet;
 
@@ -49,9 +49,6 @@ struct Machine {
     jolt: Vec<usize>,
 }
 
-// use memoize::memoize;
-
-// #[memoize]
 fn push_button(mut state: Vec<usize>, button: &[usize]) -> Vec<usize> {
     for bit in button {
         state[*bit] += 1;
@@ -59,11 +56,6 @@ fn push_button(mut state: Vec<usize>, button: &[usize]) -> Vec<usize> {
     state
 }
 
-// use bitvec::prelude::*;
-
-// let mut bv: BitVec = BitVec::new();
-// bv.push(false);
-// bv.push(true);
 fn machines(input: &str) -> IResult<&str, Vec<Machine>> {
     separated_list1(line_ending, machine).parse(input)
 }
@@ -82,7 +74,7 @@ fn machine(input: &str) -> IResult<&str, Machine> {
         },
     ))
 }
-// [.##.]
+
 fn goal(input: &str) -> IResult<&str, Vec<usize>> {
     delimited(
         complete::char('['),
@@ -104,6 +96,7 @@ fn goal(input: &str) -> IResult<&str, Vec<usize>> {
     )
     .parse(input)
 }
+
 fn button(input: &str) -> IResult<&str, Vec<usize>> {
     delimited(
         complete::char('('),
@@ -112,6 +105,7 @@ fn button(input: &str) -> IResult<&str, Vec<usize>> {
     )
     .parse(input)
 }
+
 fn joltage(input: &str) -> IResult<&str, Vec<usize>> {
     delimited(
         complete::char('{'),
@@ -128,6 +122,6 @@ mod day01 {
     #[test]
     fn test_part2() {
         let _input = include_str!("../testinput.txt");
-        assert_eq!(part2(_input), 3263827);
+        assert_eq!(part2(_input), 33);
     }
 }

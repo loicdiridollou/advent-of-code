@@ -23,26 +23,13 @@ chosen to learn Typescript. For 2024 and 2025, we will do AoC in rust.
 | Day 3  |        Lobby        | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day03/) | ⭐️⭐️  |
 | Day 4  | Printing Department | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day04/) | ⭐️⭐️  |
 | Day 5  |      Cafeteria      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day05/) | ⭐️⭐️  |
-| Day 6  |                     |                                                                                 |       |
-| Day 7  |                     |                                                                                 |       |
-| Day 8  |                     |                                                                                 |       |
-| Day 9  |                     |                                                                                 |       |
-| Day 10 |                     |                                                                                 |       |
-| Day 11 |                     |                                                                                 |       |
-| Day 12 |                     |                                                                                 |       |
-| Day 13 |                     |                                                                                 |       |
-| Day 14 |                     |                                                                                 |       |
-| Day 15 |                     |                                                                                 |       |
-| Day 16 |                     |                                                                                 |       |
-| Day 17 |                     |                                                                                 |       |
-| Day 18 |                     |                                                                                 |       |
-| Day 19 |                     |                                                                                 |       |
-| Day 20 |                     |                                                                                 |       |
-| Day 21 |                     |                                                                                 |       |
-| Day 22 |                     |                                                                                 |       |
-| Day 23 |                     |                                                                                 |       |
-| Day 24 |                     |                                                                                 |       |
-| Day 25 |                     |                                                                                 |       |
+| Day 6  |   Trash Compactor   | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day06/) | ⭐️⭐️  |
+| Day 7  |    Laboratories     | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day07/) | ⭐️⭐️  |
+| Day 8  |     Playground      | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day08/) | ⭐️⭐️  |
+| Day 9  |    Movie Theater    | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day09/) | ⭐️⭐️  |
+| Day 10 |       Factory       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day10/) | ⭐️⭐️  |
+| Day 11 |       Reactor       | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day11/) | ⭐️⭐️  |
+| Day 12 | Christmas Tree Farm | [Dir](https://gitlab.com/loicdiridollou/advent-of-code/-/blob/main/2025/day12/) | ⭐️⭐️  |
 
 ### 2024
 
